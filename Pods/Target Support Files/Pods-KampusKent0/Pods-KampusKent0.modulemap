@@ -1,0 +1,6 @@
+framework module Pods_KampusKent0 {
+  umbrella header "Pods-KampusKent0-umbrella.h"
+
+  export *
+  module * { export * }
+}

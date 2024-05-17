@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		113FCD34F867012975E7C72F /* Pods_KampusKent0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ABFF1BD392CC6AA0727466 /* Pods_KampusKent0.framework */; };
+		22022A1B2BF765DA00F7DF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A1A2BF765DA00F7DF78 /* AppDelegate.swift */; };
+		22022A1D2BF765DA00F7DF78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A1C2BF765DA00F7DF78 /* SceneDelegate.swift */; };
+		22022A1F2BF765DA00F7DF78 /* KKLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A1E2BF765DA00F7DF78 /* KKLoginVC.swift */; };
+		22022A242BF765DC00F7DF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22022A232BF765DC00F7DF78 /* Assets.xcassets */; };
+		22022A272BF765DC00F7DF78 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 22022A262BF765DC00F7DF78 /* Base */; };
+		22022A2F2BF7686D00F7DF78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22022A2E2BF7686D00F7DF78 /* GoogleService-Info.plist */; };
+		22022A322BF768BA00F7DF78 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 22022A312BF768BA00F7DF78 /* FirebaseAuth */; };
+		22022A342BF768BA00F7DF78 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 22022A332BF768BA00F7DF78 /* FirebaseFirestore */; };
+		22022A362BF768BA00F7DF78 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 22022A352BF768BA00F7DF78 /* FirebaseFirestoreSwift */; };
+		22022A382BF768BA00F7DF78 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 22022A372BF768BA00F7DF78 /* FirebaseFunctions */; };
+		22022A3A2BF768BA00F7DF78 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 22022A392BF768BA00F7DF78 /* FirebaseStorage */; };
+		22022A3D2BF769D800F7DF78 /* KKHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A3C2BF769D800F7DF78 /* KKHomeVC.swift */; };
+		22022A3F2BF769F400F7DF78 /* KKAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A3E2BF769F400F7DF78 /* KKAlertVC.swift */; };
+		22022A412BF76A1600F7DF78 /* KKTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A402BF76A1600F7DF78 /* KKTabBarVC.swift */; };
+		22022A432BF76A3300F7DF78 /* KKTicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A422BF76A3300F7DF78 /* KKTicketVC.swift */; };
+		22022A462BF76A5C00F7DF78 /* KKAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A452BF76A5C00F7DF78 /* KKAlertContainerView.swift */; };
+		22022A482BF76A7700F7DF78 /* KKHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A472BF76A7700F7DF78 /* KKHomeView.swift */; };
+		22022A4A2BF76A9200F7DF78 /* KKLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A492BF76A9200F7DF78 /* KKLoginView.swift */; };
+		22022A4D2BF76AB700F7DF78 /* KKBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A4C2BF76AB700F7DF78 /* KKBodyLabel.swift */; };
+		22022A4F2BF76ACB00F7DF78 /* KKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A4E2BF76ACB00F7DF78 /* KKButton.swift */; };
+		22022A512BF76AE300F7DF78 /* KKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A502BF76AE300F7DF78 /* KKTextField.swift */; };
+		22022A532BF76AF600F7DF78 /* KKTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A522BF76AF600F7DF78 /* KKTitleLabel.swift */; };
+		22022A562BF76BD900F7DF78 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A552BF76BD900F7DF78 /* UIView+Extensions.swift */; };
+		22022A582BF76BEC00F7DF78 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A572BF76BEC00F7DF78 /* UIViewController+Extensions.swift */; };
+		22022A5B2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A5A2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift */; };
+		22022A5D2BF76C6400F7DF78 /* KKStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A5C2BF76C6400F7DF78 /* KKStation.swift */; };
+		22022A612BF76C9300F7DF78 /* KKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A602BF76C9300F7DF78 /* KKError.swift */; };
+		22022A652BF76D7C00F7DF78 /* KKHomeViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A642BF76D7C00F7DF78 /* KKHomeViewVM.swift */; };
+		22022A672BF76D9A00F7DF78 /* KKLoginViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A662BF76D9A00F7DF78 /* KKLoginViewVM.swift */; };
+		22022A692BF77B3900F7DF78 /* KKCustomDropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A682BF77B3900F7DF78 /* KKCustomDropDownCell.swift */; };
+		22022A6E2BF77F4D00F7DF78 /* KKCustomDDCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22022A6D2BF77F4D00F7DF78 /* KKCustomDDCell.xib */; };
+		22022A6F2BF77F4D00F7DF78 /* KKCustomDDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A6C2BF77F4D00F7DF78 /* KKCustomDDCell.swift */; };
+		22022A712BF78A7F00F7DF78 /* KKTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A702BF78A7F00F7DF78 /* KKTicket.swift */; };
+		22022A732BF7A1EF00F7DF78 /* KKPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22022A172BF765DA00F7DF78 /* KampusKent0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusKent0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22022A1A2BF765DA00F7DF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22022A1C2BF765DA00F7DF78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22022A1E2BF765DA00F7DF78 /* KKLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKLoginVC.swift; sourceTree = "<group>"; };
+		22022A232BF765DC00F7DF78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22022A262BF765DC00F7DF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22022A282BF765DC00F7DF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22022A2E2BF7686D00F7DF78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22022A3C2BF769D800F7DF78 /* KKHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKHomeVC.swift; sourceTree = "<group>"; };
+		22022A3E2BF769F400F7DF78 /* KKAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAlertVC.swift; sourceTree = "<group>"; };
+		22022A402BF76A1600F7DF78 /* KKTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTabBarVC.swift; sourceTree = "<group>"; };
+		22022A422BF76A3300F7DF78 /* KKTicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTicketVC.swift; sourceTree = "<group>"; };
+		22022A452BF76A5C00F7DF78 /* KKAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAlertContainerView.swift; sourceTree = "<group>"; };
+		22022A472BF76A7700F7DF78 /* KKHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKHomeView.swift; sourceTree = "<group>"; };
+		22022A492BF76A9200F7DF78 /* KKLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKLoginView.swift; sourceTree = "<group>"; };
+		22022A4C2BF76AB700F7DF78 /* KKBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKBodyLabel.swift; sourceTree = "<group>"; };
+		22022A4E2BF76ACB00F7DF78 /* KKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKButton.swift; sourceTree = "<group>"; };
+		22022A502BF76AE300F7DF78 /* KKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTextField.swift; sourceTree = "<group>"; };
+		22022A522BF76AF600F7DF78 /* KKTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTitleLabel.swift; sourceTree = "<group>"; };
+		22022A552BF76BD900F7DF78 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		22022A572BF76BEC00F7DF78 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		22022A5A2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKFirebaseCRUDManager.swift; sourceTree = "<group>"; };
+		22022A5C2BF76C6400F7DF78 /* KKStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKStation.swift; sourceTree = "<group>"; };
+		22022A602BF76C9300F7DF78 /* KKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKError.swift; sourceTree = "<group>"; };
+		22022A642BF76D7C00F7DF78 /* KKHomeViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKHomeViewVM.swift; sourceTree = "<group>"; };
+		22022A662BF76D9A00F7DF78 /* KKLoginViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKLoginViewVM.swift; sourceTree = "<group>"; };
+		22022A682BF77B3900F7DF78 /* KKCustomDropDownCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCustomDropDownCell.swift; sourceTree = "<group>"; };
+		22022A6C2BF77F4D00F7DF78 /* KKCustomDDCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCustomDDCell.swift; sourceTree = "<group>"; };
+		22022A6D2BF77F4D00F7DF78 /* KKCustomDDCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKCustomDDCell.xib; sourceTree = "<group>"; };
+		22022A702BF78A7F00F7DF78 /* KKTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTicket.swift; sourceTree = "<group>"; };
+		22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentVC.swift; sourceTree = "<group>"; };
+		26ABFF1BD392CC6AA0727466 /* Pods_KampusKent0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KampusKent0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D16808F7FE29BC199770134 /* Pods-KampusKent0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KampusKent0.debug.xcconfig"; path = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0.debug.xcconfig"; sourceTree = "<group>"; };
+		9E40599D95686AE46D140741 /* Pods-KampusKent0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KampusKent0.release.xcconfig"; path = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22022A142BF765DA00F7DF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113FCD34F867012975E7C72F /* Pods_KampusKent0.framework in Frameworks */,
+				22022A322BF768BA00F7DF78 /* FirebaseAuth in Frameworks */,
+				22022A382BF768BA00F7DF78 /* FirebaseFunctions in Frameworks */,
+				22022A342BF768BA00F7DF78 /* FirebaseFirestore in Frameworks */,
+				22022A362BF768BA00F7DF78 /* FirebaseFirestoreSwift in Frameworks */,
+				22022A3A2BF768BA00F7DF78 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22022A0E2BF765DA00F7DF78 = {
+			isa = PBXGroup;
+			children = (
+				22022A192BF765DA00F7DF78 /* KampusKent0 */,
+				22022A182BF765DA00F7DF78 /* Products */,
+				9C7B8F75E39A1A532ECBB075 /* Pods */,
+				66FD79FC0253D78CB7F383DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22022A182BF765DA00F7DF78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22022A172BF765DA00F7DF78 /* KampusKent0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22022A192BF765DA00F7DF78 /* KampusKent0 */ = {
+			isa = PBXGroup;
+			children = (
+				22022A632BF76D6000F7DF78 /* ViewModels */,
+				22022A622BF76CA700F7DF78 /* Resources */,
+				22022A5F2BF76C8800F7DF78 /* Utitlities */,
+				22022A5E2BF76C6B00F7DF78 /* Models */,
+				22022A592BF76C1700F7DF78 /* Managers */,
+				22022A542BF76B1E00F7DF78 /* Extensions */,
+				22022A442BF76A4300F7DF78 /* Views */,
+				22022A3B2BF769B400F7DF78 /* ViewController */,
+				22022A282BF765DC00F7DF78 /* Info.plist */,
+			);
+			path = KampusKent0;
+			sourceTree = "<group>";
+		};
+		22022A3B2BF769B400F7DF78 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22022A1E2BF765DA00F7DF78 /* KKLoginVC.swift */,
+				22022A3C2BF769D800F7DF78 /* KKHomeVC.swift */,
+				22022A3E2BF769F400F7DF78 /* KKAlertVC.swift */,
+				22022A402BF76A1600F7DF78 /* KKTabBarVC.swift */,
+				22022A422BF76A3300F7DF78 /* KKTicketVC.swift */,
+				22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		22022A442BF76A4300F7DF78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22022A4B2BF76A9D00F7DF78 /* CustomViews */,
+				22022A452BF76A5C00F7DF78 /* KKAlertContainerView.swift */,
+				22022A472BF76A7700F7DF78 /* KKHomeView.swift */,
+				22022A492BF76A9200F7DF78 /* KKLoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22022A4B2BF76A9D00F7DF78 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				22022A4C2BF76AB700F7DF78 /* KKBodyLabel.swift */,
+				22022A4E2BF76ACB00F7DF78 /* KKButton.swift */,
+				22022A502BF76AE300F7DF78 /* KKTextField.swift */,
+				22022A522BF76AF600F7DF78 /* KKTitleLabel.swift */,
+				22022A682BF77B3900F7DF78 /* KKCustomDropDownCell.swift */,
+				22022A6C2BF77F4D00F7DF78 /* KKCustomDDCell.swift */,
+				22022A6D2BF77F4D00F7DF78 /* KKCustomDDCell.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		22022A542BF76B1E00F7DF78 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				22022A552BF76BD900F7DF78 /* UIView+Extensions.swift */,
+				22022A572BF76BEC00F7DF78 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		22022A592BF76C1700F7DF78 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				22022A5A2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		22022A5E2BF76C6B00F7DF78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22022A5C2BF76C6400F7DF78 /* KKStation.swift */,
+				22022A702BF78A7F00F7DF78 /* KKTicket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22022A5F2BF76C8800F7DF78 /* Utitlities */ = {
+			isa = PBXGroup;
+			children = (
+				22022A602BF76C9300F7DF78 /* KKError.swift */,
+			);
+			path = Utitlities;
+			sourceTree = "<group>";
+		};
+		22022A622BF76CA700F7DF78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22022A2E2BF7686D00F7DF78 /* GoogleService-Info.plist */,
+				22022A1A2BF765DA00F7DF78 /* AppDelegate.swift */,
+				22022A1C2BF765DA00F7DF78 /* SceneDelegate.swift */,
+				22022A232BF765DC00F7DF78 /* Assets.xcassets */,
+				22022A252BF765DC00F7DF78 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22022A632BF76D6000F7DF78 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				22022A642BF76D7C00F7DF78 /* KKHomeViewVM.swift */,
+				22022A662BF76D9A00F7DF78 /* KKLoginViewVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		66FD79FC0253D78CB7F383DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26ABFF1BD392CC6AA0727466 /* Pods_KampusKent0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C7B8F75E39A1A532ECBB075 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D16808F7FE29BC199770134 /* Pods-KampusKent0.debug.xcconfig */,
+				9E40599D95686AE46D140741 /* Pods-KampusKent0.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22022A162BF765DA00F7DF78 /* KampusKent0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22022A2B2BF765DC00F7DF78 /* Build configuration list for PBXNativeTarget "KampusKent0" */;
+			buildPhases = (
+				E587FD437AE15C2531D62D11 /* [CP] Check Pods Manifest.lock */,
+				22022A132BF765DA00F7DF78 /* Sources */,
+				22022A142BF765DA00F7DF78 /* Frameworks */,
+				22022A152BF765DA00F7DF78 /* Resources */,
+				554F9BF99CD0A510A374CDC3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KampusKent0;
+			packageProductDependencies = (
+				22022A312BF768BA00F7DF78 /* FirebaseAuth */,
+				22022A332BF768BA00F7DF78 /* FirebaseFirestore */,
+				22022A352BF768BA00F7DF78 /* FirebaseFirestoreSwift */,
+				22022A372BF768BA00F7DF78 /* FirebaseFunctions */,
+				22022A392BF768BA00F7DF78 /* FirebaseStorage */,
+			);
+			productName = KampusKent0;
+			productReference = 22022A172BF765DA00F7DF78 /* KampusKent0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22022A0F2BF765DA00F7DF78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					22022A162BF765DA00F7DF78 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 22022A122BF765DA00F7DF78 /* Build configuration list for PBXProject "KampusKent0" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22022A0E2BF765DA00F7DF78;
+			packageReferences = (
+				22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 22022A182BF765DA00F7DF78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22022A162BF765DA00F7DF78 /* KampusKent0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22022A152BF765DA00F7DF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22022A6E2BF77F4D00F7DF78 /* KKCustomDDCell.xib in Resources */,
+				22022A242BF765DC00F7DF78 /* Assets.xcassets in Resources */,
+				22022A272BF765DC00F7DF78 /* Base in Resources */,
+				22022A2F2BF7686D00F7DF78 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554F9BF99CD0A510A374CDC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KampusKent0/Pods-KampusKent0-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KampusKent0/Pods-KampusKent0-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KampusKent0/Pods-KampusKent0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E587FD437AE15C2531D62D11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KampusKent0-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22022A132BF765DA00F7DF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22022A4D2BF76AB700F7DF78 /* KKBodyLabel.swift in Sources */,
+				22022A432BF76A3300F7DF78 /* KKTicketVC.swift in Sources */,
+				22022A462BF76A5C00F7DF78 /* KKAlertContainerView.swift in Sources */,
+				22022A4F2BF76ACB00F7DF78 /* KKButton.swift in Sources */,
+				22022A1F2BF765DA00F7DF78 /* KKLoginVC.swift in Sources */,
+				22022A532BF76AF600F7DF78 /* KKTitleLabel.swift in Sources */,
+				22022A3F2BF769F400F7DF78 /* KKAlertVC.swift in Sources */,
+				22022A4A2BF76A9200F7DF78 /* KKLoginView.swift in Sources */,
+				22022A6F2BF77F4D00F7DF78 /* KKCustomDDCell.swift in Sources */,
+				22022A412BF76A1600F7DF78 /* KKTabBarVC.swift in Sources */,
+				22022A5B2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift in Sources */,
+				22022A5D2BF76C6400F7DF78 /* KKStation.swift in Sources */,
+				22022A512BF76AE300F7DF78 /* KKTextField.swift in Sources */,
+				22022A3D2BF769D800F7DF78 /* KKHomeVC.swift in Sources */,
+				22022A1B2BF765DA00F7DF78 /* AppDelegate.swift in Sources */,
+				22022A652BF76D7C00F7DF78 /* KKHomeViewVM.swift in Sources */,
+				22022A672BF76D9A00F7DF78 /* KKLoginViewVM.swift in Sources */,
+				22022A582BF76BEC00F7DF78 /* UIViewController+Extensions.swift in Sources */,
+				22022A562BF76BD900F7DF78 /* UIView+Extensions.swift in Sources */,
+				22022A712BF78A7F00F7DF78 /* KKTicket.swift in Sources */,
+				22022A612BF76C9300F7DF78 /* KKError.swift in Sources */,
+				22022A692BF77B3900F7DF78 /* KKCustomDropDownCell.swift in Sources */,
+				22022A732BF7A1EF00F7DF78 /* KKPaymentVC.swift in Sources */,
+				22022A1D2BF765DA00F7DF78 /* SceneDelegate.swift in Sources */,
+				22022A482BF76A7700F7DF78 /* KKHomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22022A252BF765DC00F7DF78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22022A262BF765DC00F7DF78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22022A292BF765DC00F7DF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22022A2A2BF765DC00F7DF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22022A2C2BF765DC00F7DF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D16808F7FE29BC199770134 /* Pods-KampusKent0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KampusKent0/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndat.KampusKent0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22022A2D2BF765DC00F7DF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E40599D95686AE46D140741 /* Pods-KampusKent0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KampusKent0/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ndat.KampusKent0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22022A122BF765DA00F7DF78 /* Build configuration list for PBXProject "KampusKent0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22022A292BF765DC00F7DF78 /* Debug */,
+				22022A2A2BF765DC00F7DF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22022A2B2BF765DC00F7DF78 /* Build configuration list for PBXNativeTarget "KampusKent0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22022A2C2BF765DC00F7DF78 /* Debug */,
+				22022A2D2BF765DC00F7DF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22022A312BF768BA00F7DF78 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		22022A332BF768BA00F7DF78 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		22022A352BF768BA00F7DF78 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		22022A372BF768BA00F7DF78 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		22022A392BF768BA00F7DF78 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22022A302BF768BA00F7DF78 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 22022A0F2BF765DA00F7DF78 /* Project object */;
+}
