@@ -38,6 +38,8 @@ final class KKHomeView: UIView {
         let mapView = MapKit.MKMapView()
         mapView.translatesAutoresizingMaskIntoConstraints = false
         mapView.layer.cornerRadius = 30
+        mapView.layer.shadowColor = UIColor.lightGray.cgColor
+        mapView.layer.shadowOpacity = 1
         return mapView
     }()
     
@@ -110,7 +112,7 @@ final class KKHomeView: UIView {
             mapView.topAnchor.constraint(equalTo: topAnchor, constant: padding),
             mapView.leftAnchor.constraint(equalTo: leftAnchor, constant: padding),
             mapView.rightAnchor.constraint(equalTo: rightAnchor, constant: -padding),
-            mapView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height / 2.3),
+            mapView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height / 2.63),
             
             titleLabel.topAnchor.constraint(equalTo: mapView.bottomAnchor, constant: 20),
             titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding * 3),

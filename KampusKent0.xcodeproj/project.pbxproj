@@ -42,6 +42,16 @@
 		22022A6F2BF77F4D00F7DF78 /* KKCustomDDCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A6C2BF77F4D00F7DF78 /* KKCustomDDCell.swift */; };
 		22022A712BF78A7F00F7DF78 /* KKTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A702BF78A7F00F7DF78 /* KKTicket.swift */; };
 		22022A732BF7A1EF00F7DF78 /* KKPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */; };
+		22022A752BF7A3D300F7DF78 /* KKPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A742BF7A3D300F7DF78 /* KKPaymentView.swift */; };
+		22022A772BF7A74800F7DF78 /* KKPaymentViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A762BF7A74800F7DF78 /* KKPaymentViewVM.swift */; };
+		22022A792BF7A8C000F7DF78 /* KKPaymentAddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A782BF7A8C000F7DF78 /* KKPaymentAddCardView.swift */; };
+		22022A7B2BF7B17D00F7DF78 /* KKAddCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */; };
+		22022A7F2BF7BFC400F7DF78 /* KKCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A7E2BF7BFC400F7DF78 /* KKCard.swift */; };
+		22022A812BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */; };
+		22921EA42BF8F3B8004DE95E /* KKConfirmPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921EA32BF8F3B8004DE95E /* KKConfirmPaymentVC.swift */; };
+		22921EA62BF8F3E2004DE95E /* KKConfirmPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921EA52BF8F3E2004DE95E /* KKConfirmPaymentView.swift */; };
+		22921EA82BF97A36004DE95E /* KKTicketsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921EA72BF97A36004DE95E /* KKTicketsView.swift */; };
+		22921EAA2BF97CFA004DE95E /* KKTicketsViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22921EA92BF97CFA004DE95E /* KKTicketsViewVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +86,16 @@
 		22022A6D2BF77F4D00F7DF78 /* KKCustomDDCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KKCustomDDCell.xib; sourceTree = "<group>"; };
 		22022A702BF78A7F00F7DF78 /* KKTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTicket.swift; sourceTree = "<group>"; };
 		22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentVC.swift; sourceTree = "<group>"; };
+		22022A742BF7A3D300F7DF78 /* KKPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentView.swift; sourceTree = "<group>"; };
+		22022A762BF7A74800F7DF78 /* KKPaymentViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentViewVM.swift; sourceTree = "<group>"; };
+		22022A782BF7A8C000F7DF78 /* KKPaymentAddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentAddCardView.swift; sourceTree = "<group>"; };
+		22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAddCardVC.swift; sourceTree = "<group>"; };
+		22022A7E2BF7BFC400F7DF78 /* KKCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCard.swift; sourceTree = "<group>"; };
+		22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentCardsTableViewCell.swift; sourceTree = "<group>"; };
+		22921EA32BF8F3B8004DE95E /* KKConfirmPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKConfirmPaymentVC.swift; sourceTree = "<group>"; };
+		22921EA52BF8F3E2004DE95E /* KKConfirmPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKConfirmPaymentView.swift; sourceTree = "<group>"; };
+		22921EA72BF97A36004DE95E /* KKTicketsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTicketsView.swift; sourceTree = "<group>"; };
+		22921EA92BF97CFA004DE95E /* KKTicketsViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTicketsViewVM.swift; sourceTree = "<group>"; };
 		26ABFF1BD392CC6AA0727466 /* Pods_KampusKent0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KampusKent0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D16808F7FE29BC199770134 /* Pods-KampusKent0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KampusKent0.debug.xcconfig"; path = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0.debug.xcconfig"; sourceTree = "<group>"; };
 		9E40599D95686AE46D140741 /* Pods-KampusKent0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KampusKent0.release.xcconfig"; path = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +161,8 @@
 				22022A402BF76A1600F7DF78 /* KKTabBarVC.swift */,
 				22022A422BF76A3300F7DF78 /* KKTicketVC.swift */,
 				22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */,
+				22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */,
+				22921EA32BF8F3B8004DE95E /* KKConfirmPaymentVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -152,6 +174,11 @@
 				22022A452BF76A5C00F7DF78 /* KKAlertContainerView.swift */,
 				22022A472BF76A7700F7DF78 /* KKHomeView.swift */,
 				22022A492BF76A9200F7DF78 /* KKLoginView.swift */,
+				22022A742BF7A3D300F7DF78 /* KKPaymentView.swift */,
+				22022A782BF7A8C000F7DF78 /* KKPaymentAddCardView.swift */,
+				22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */,
+				22921EA52BF8F3E2004DE95E /* KKConfirmPaymentView.swift */,
+				22921EA72BF97A36004DE95E /* KKTicketsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +219,7 @@
 			children = (
 				22022A5C2BF76C6400F7DF78 /* KKStation.swift */,
 				22022A702BF78A7F00F7DF78 /* KKTicket.swift */,
+				22022A7E2BF7BFC400F7DF78 /* KKCard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +249,8 @@
 			children = (
 				22022A642BF76D7C00F7DF78 /* KKHomeViewVM.swift */,
 				22022A662BF76D9A00F7DF78 /* KKLoginViewVM.swift */,
+				22022A762BF7A74800F7DF78 /* KKPaymentViewVM.swift */,
+				22921EA92BF97CFA004DE95E /* KKTicketsViewVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -368,16 +398,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22921EA82BF97A36004DE95E /* KKTicketsView.swift in Sources */,
+				22022A772BF7A74800F7DF78 /* KKPaymentViewVM.swift in Sources */,
 				22022A4D2BF76AB700F7DF78 /* KKBodyLabel.swift in Sources */,
 				22022A432BF76A3300F7DF78 /* KKTicketVC.swift in Sources */,
 				22022A462BF76A5C00F7DF78 /* KKAlertContainerView.swift in Sources */,
+				22022A752BF7A3D300F7DF78 /* KKPaymentView.swift in Sources */,
 				22022A4F2BF76ACB00F7DF78 /* KKButton.swift in Sources */,
 				22022A1F2BF765DA00F7DF78 /* KKLoginVC.swift in Sources */,
 				22022A532BF76AF600F7DF78 /* KKTitleLabel.swift in Sources */,
 				22022A3F2BF769F400F7DF78 /* KKAlertVC.swift in Sources */,
+				22022A792BF7A8C000F7DF78 /* KKPaymentAddCardView.swift in Sources */,
 				22022A4A2BF76A9200F7DF78 /* KKLoginView.swift in Sources */,
+				22022A812BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift in Sources */,
 				22022A6F2BF77F4D00F7DF78 /* KKCustomDDCell.swift in Sources */,
 				22022A412BF76A1600F7DF78 /* KKTabBarVC.swift in Sources */,
+				22921EA42BF8F3B8004DE95E /* KKConfirmPaymentVC.swift in Sources */,
+				22022A7F2BF7BFC400F7DF78 /* KKCard.swift in Sources */,
 				22022A5B2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift in Sources */,
 				22022A5D2BF76C6400F7DF78 /* KKStation.swift in Sources */,
 				22022A512BF76AE300F7DF78 /* KKTextField.swift in Sources */,
@@ -388,10 +425,13 @@
 				22022A582BF76BEC00F7DF78 /* UIViewController+Extensions.swift in Sources */,
 				22022A562BF76BD900F7DF78 /* UIView+Extensions.swift in Sources */,
 				22022A712BF78A7F00F7DF78 /* KKTicket.swift in Sources */,
+				22921EAA2BF97CFA004DE95E /* KKTicketsViewVM.swift in Sources */,
 				22022A612BF76C9300F7DF78 /* KKError.swift in Sources */,
 				22022A692BF77B3900F7DF78 /* KKCustomDropDownCell.swift in Sources */,
 				22022A732BF7A1EF00F7DF78 /* KKPaymentVC.swift in Sources */,
+				22921EA62BF8F3E2004DE95E /* KKConfirmPaymentView.swift in Sources */,
 				22022A1D2BF765DA00F7DF78 /* SceneDelegate.swift in Sources */,
+				22022A7B2BF7B17D00F7DF78 /* KKAddCardVC.swift in Sources */,
 				22022A482BF76A7700F7DF78 /* KKHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

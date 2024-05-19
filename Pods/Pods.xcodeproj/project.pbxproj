@@ -7,67 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2DFA22A98265F2D732F51993996326FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		511C6D7E204F4B54703B4B5CC9725622 /* Pods-KampusKent0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB9F8E63B016460709C92B3A302AD5AD /* Pods-KampusKent0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87586FE2C9DECB6AE7FCA3238E4A1B8 /* DropDown+Appearance.swift */; };
-		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBC6D732E1B0C41C6A8D03A8C81CF47 /* DropDownCell.xib */; };
-		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3761A77A038E79C8451C03293CDA4FC0 /* DPDConstants.swift */; };
-		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FCC1AD54C344AFD4E184B9586BFE267 /* DropDown.swift */; };
-		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB2377069976EC65992A59335066D3 /* DPDKeyboardListener.swift */; };
-		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17E1BF2597D8F37F69DB34CA024E5C /* DropDown-dummy.m */; };
-		A9859201F5D865A3C30D3ADEC2F65095 /* Pods-KampusKent0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50DF720BF5A4121C12CE27286B3CDF /* Pods-KampusKent0-dummy.m */; };
-		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F84589A96D52448FD74E261268404 /* DPDUIView+Extension.swift */; };
-		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA092CDFBD4C66A29A9CDEA1DE78E1 /* DropDownCell.swift */; };
-		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8F61850F82D6CC477FAF8326336FD5A /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06A99CFE002E5FDB16FEF3128FA88140 /* CCBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC12D740B0C2751B601BB683DC0E45D1 /* CCBackgroundView.swift */; };
+		1F8CA56DDB4D3C03A8E68ADBE17E1936 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59FF4B0EE6D5021E98A04A1BFC0D0D /* FormTextField.swift */; };
+		27719E1719165FEBCA7D1DAF939C9E72 /* FormTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A980F54483ADACA70AC158D673951949 /* FormTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BCB5765265D70CA24079AB63949E4D2 /* DecimalInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DA61BEAFC43011186D20BB71B5278E /* DecimalInputValidator.swift */; };
+		2E0D66F34BF63FCA729202D99F2DC322 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		34D86F4481D9328BF45B637B906B3122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		37638B80D2B71BCA8BC4A4E9FC01E534 /* CreditCardView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F34499094898D0DD03A4BC85AF65B446 /* CreditCardView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		378552912F0F34D18E64FBF9373676BF /* Pods-KampusKent0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C50DF720BF5A4121C12CE27286B3CDF /* Pods-KampusKent0-dummy.m */; };
+		3DF3272868CE62AA08CF98D1EA2330E0 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51B0522DDD9D7193075239D4F4A8531 /* CreditCardView.swift */; };
+		3E4BC78628D0BAF038D6085DA3397AE5 /* InputValidatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4018007A30CA07F0F477DF60DC519AB3 /* InputValidatable.swift */; };
+		3F1EA2795C6A191C1CB89F4EFA2D5CD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		515E22E4255B6073C1897BDDB091A2B8 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CA070C650BCEC56022A9941D1E10C0 /* DropDown+Appearance.swift */; };
+		51C970BDD37360B18DD62D878937E81D /* FormTextFieldTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF4AD6235E812FD79A907F8ACB6B741 /* FormTextFieldTypeManager.swift */; };
+		68E1653C561E14BBEAC9CF4873570D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB55415E4FD98976DEB5F4D6FBC38E5 /* DropDownCell.xib */; };
+		74012B832FAF67F8D62A2B27CDAFE8B5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E01C3FB913F6B13101F7A84311A73 /* DPDConstants.swift */; };
+		757FE05A4E9FC8E050083FF9999706DB /* CCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5482B0CDD0E016D727B4F6CCE01C583A /* CCContentView.swift */; };
+		7E519DF539EF53ABE7880B88A4A637AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		84459C4824533C9C4FD12AFC941F3CE1 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB78D35F2FD71A18D04055A4C9C0BC9 /* DropDown.swift */; };
+		8924CFC806352CD0EEDB6C971DC8DCA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		89A72A55273CE358DC4E7600F785C37B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28425A35422F73B9EC963FF28C5A92BB /* DPDKeyboardListener.swift */; };
+		8CA8C7BD622FE19A58B9802937473536 /* CreditCardView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E132B8AC161493372C9BC6508ADFCDA /* CreditCardView-dummy.m */; };
+		8D7E3F259A58ED961E9F7262D250CD68 /* FormTextFieldClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0192EAD53B8763DB85FC9E3089E09A9 /* FormTextFieldClearButton.swift */; };
+		907338727C09F65DB75AA7AB9E10C3B4 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A235F5F1C7CE263283680D2E630BF8FC /* DropDown-dummy.m */; };
+		9ACBACAC93045EFB130E59C2681D1384 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65928B387B61D1ABE3A4883D05F52530 /* Validation.swift */; };
+		9D3314C1EA1066E2548B40E90F64DE4C /* Pods-KampusKent0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB9F8E63B016460709C92B3A302AD5AD /* Pods-KampusKent0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A341742B21F5CB41E97300E76C47E32C /* FormTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB3F5EA9A91131F59C24B11B2293B8E7 /* FormTextField-dummy.m */; };
+		AB6B7AFA23757E4018C35C0D4E87B903 /* InputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126ECD8AF6635F0035ED1A04401A7C8A /* InputValidator.swift */; };
+		B35570E42B0B5DA2EA7FE6FCE711CC24 /* RequiredInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4878D5146546F6574C1B33C5BD80FD7A /* RequiredInputValidator.swift */; };
+		B5F859BBA322A177500F16B37F426E70 /* CardExpirationDateInputValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DC069570D8B90D79322A3C91C2EAC2 /* CardExpirationDateInputValidator.swift */; };
+		B73E510E851686F8184E26986A470458 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010035A36583719978795355A8264593 /* DPDUIView+Extension.swift */; };
+		BDC10974A8641F01C5665C61EA37A153 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402E01FB74B9A97FCD3EE02897B4F81 /* DropDownCell.swift */; };
+		D50B41343936922017DFA46EE21ECB6B /* FormTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BB947DBE2A9E55828B57FE85445D9B3 /* FormTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0A8C46EEE733B55971B1CC5ED65C9AA /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC574161583E2CB38444F817B7A62E0F /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40BBB1782503594F6FA87CA419F42B3 /* Formattable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90FA4F0EAE0FD2EDC6E12710E19360A /* Formattable.swift */; };
+		F019BD2498636C09671A70AF57B559CD /* CardNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C91A1BC0A4153B98074AFDE6DFFBC4C /* CardNumberFormatter.swift */; };
+		F5332736303B5D0E5F149B72F3819346 /* CardExpirationDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C407DA01A485571B03ECDE4B2E338C2 /* CardExpirationDateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B44615A9FDD92098CBC247DA6BCB6A04 /* PBXContainerItemProxy */ = {
+		AEDE05F3F4AE73CD9BA14676860AE991 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
 			remoteInfo = DropDown;
 		};
+		D9650F55C84B7692968A9AA8D1EAE1F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46DFE403432A84887C89208F7612BC1D;
+			remoteInfo = CreditCardView;
+		};
+		FE50F92D3D9C770469A29EF67DBC508C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA56E39EF6C470C3DFC0A23077F6D611;
+			remoteInfo = FormTextField;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010035A36583719978795355A8264593 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		0E20EE666A0180A06B0823D271C57B63 /* Pods-KampusKent0-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KampusKent0-frameworks.sh"; sourceTree = "<group>"; };
+		126ECD8AF6635F0035ED1A04401A7C8A /* InputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputValidator.swift; path = Source/InputValidator/InputValidator.swift; sourceTree = "<group>"; };
 		18EDF880235FC715B6ECD999C63A89A1 /* Pods-KampusKent0-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KampusKent0-acknowledgements.plist"; sourceTree = "<group>"; };
+		1AF4AD6235E812FD79A907F8ACB6B741 /* FormTextFieldTypeManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldTypeManager.swift; path = Source/FormTextFieldTypeManager.swift; sourceTree = "<group>"; };
+		1E132B8AC161493372C9BC6508ADFCDA /* CreditCardView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CreditCardView-dummy.m"; sourceTree = "<group>"; };
+		2018BC1260D4969CF5112CB1EF1CB3D2 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		2158855C72F3EC14E05930F5F6AC8C27 /* CreditCardView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CreditCardView-Info.plist"; sourceTree = "<group>"; };
+		27DC069570D8B90D79322A3C91C2EAC2 /* CardExpirationDateInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardExpirationDateInputValidator.swift; path = Source/InputValidator/CardExpirationDateInputValidator.swift; sourceTree = "<group>"; };
+		28425A35422F73B9EC963FF28C5A92BB /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
 		2C50DF720BF5A4121C12CE27286B3CDF /* Pods-KampusKent0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KampusKent0-dummy.m"; sourceTree = "<group>"; };
-		2F8A529C653A26F8D0B57E1CD7B2B5E6 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
-		2FCC1AD54C344AFD4E184B9586BFE267 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		3761A77A038E79C8451C03293CDA4FC0 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
-		451F84589A96D52448FD74E261268404 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		31FB42D7B4767AE8B951CCBB850BA1FD /* FormTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FormTextField; path = FormTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3402E01FB74B9A97FCD3EE02897B4F81 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		35CA070C650BCEC56022A9941D1E10C0 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		397E2380F59330A70C5FC2B9A101D123 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		4018007A30CA07F0F477DF60DC519AB3 /* InputValidatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputValidatable.swift; path = Source/InputValidator/InputValidatable.swift; sourceTree = "<group>"; };
+		445E01C3FB913F6B13101F7A84311A73 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		4878D5146546F6574C1B33C5BD80FD7A /* RequiredInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredInputValidator.swift; path = Source/InputValidator/RequiredInputValidator.swift; sourceTree = "<group>"; };
+		4929738B9481BEB62370AA83E2129096 /* FormTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FormTextField-Info.plist"; sourceTree = "<group>"; };
 		497419D50BACC45B814A3222DE8F2061 /* Pods-KampusKent0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KampusKent0-Info.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		730D85BE0320FD50EA665A82042E5742 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		4B59FF4B0EE6D5021E98A04A1BFC0D0D /* FormTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextField.swift; path = Source/FormTextField.swift; sourceTree = "<group>"; };
+		4C91A1BC0A4153B98074AFDE6DFFBC4C /* CardNumberFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardNumberFormatter.swift; path = Source/Formatter/CardNumberFormatter.swift; sourceTree = "<group>"; };
+		51D156D5541F3B3B413B5591C9228E79 /* FormTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FormTextField.modulemap; sourceTree = "<group>"; };
+		5482B0CDD0E016D727B4F6CCE01C583A /* CCContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCContentView.swift; path = Classes/CCContentView.swift; sourceTree = "<group>"; };
+		5BB78D35F2FD71A18D04055A4C9C0BC9 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		65928B387B61D1ABE3A4883D05F52530 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation/Validation.swift; sourceTree = "<group>"; };
+		74427BF77BB1BA617812114FEF0569EA /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
+		7ABB0D977C2E7AC405E9B55DAA59EB5B /* CreditCardView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CreditCardView-prefix.pch"; sourceTree = "<group>"; };
+		7F78F950689B1FB753BF5A0F14C6FB1B /* CreditCardView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CreditCardView.debug.xcconfig; sourceTree = "<group>"; };
+		8B43A57D0F7C4331D50E174F8C25881C /* CreditCardView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CreditCardView.release.xcconfig; sourceTree = "<group>"; };
+		8B5C4425CE15CDD0FA85B48B63F442D9 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		8C1BDF6B03C38D73B34EBA201AD846BA /* FormTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormTextField.release.xcconfig; sourceTree = "<group>"; };
 		8C41139F3574338C4D245E2589A76A98 /* Pods-KampusKent0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KampusKent0.modulemap"; sourceTree = "<group>"; };
-		8DBB2377069976EC65992A59335066D3 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		93EA092CDFBD4C66A29A9CDEA1DE78E1 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
 		9B6725B782188F18CB76A740433F14E4 /* DropDown */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C15EB8657063755722D9C7DC8D72885 /* DropDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.release.xcconfig; sourceTree = "<group>"; };
+		9BB947DBE2A9E55828B57FE85445D9B3 /* FormTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FormTextField.h; path = Source/FormTextField.h; sourceTree = "<group>"; };
+		9C407DA01A485571B03ECDE4B2E338C2 /* CardExpirationDateFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardExpirationDateFormatter.swift; path = Source/Formatter/CardExpirationDateFormatter.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A235F5F1C7CE263283680D2E630BF8FC /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		A5D2E205634754CA1E3DA98CCFB45E70 /* FormTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormTextField-prefix.pch"; sourceTree = "<group>"; };
 		A84331E8A8BE7764309D5B80F15CD36D /* Pods-KampusKent0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KampusKent0.debug.xcconfig"; sourceTree = "<group>"; };
-		A87586FE2C9DECB6AE7FCA3238E4A1B8 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
-		AF17E1BF2597D8F37F69DB34CA024E5C /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		A980F54483ADACA70AC158D673951949 /* FormTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormTextField-umbrella.h"; sourceTree = "<group>"; };
+		B401BFED170A8F8433E7EDCB3DC0C05A /* CreditCardView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CreditCardView.modulemap; sourceTree = "<group>"; };
+		B51B0522DDD9D7193075239D4F4A8531 /* CreditCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreditCardView.swift; path = Classes/CreditCardView.swift; sourceTree = "<group>"; };
+		B90FA4F0EAE0FD2EDC6E12710E19360A /* Formattable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formattable.swift; path = Source/Formatter/Formattable.swift; sourceTree = "<group>"; };
+		BC574161583E2CB38444F817B7A62E0F /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		C337DE5CA2DA9D71B6B4D0978E044FA1 /* Pods-KampusKent0-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KampusKent0-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C56827DB3E6D0D622FEED1F0219C5833 /* Pods-KampusKent0 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KampusKent0"; path = Pods_KampusKent0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C655C453257937C4D8D76C7CBEDCB11F /* CreditCardView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CreditCardView; path = CreditCardView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C74E7E3A979B047EAEEBB262E58BC801 /* FormTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormTextField.debug.xcconfig; sourceTree = "<group>"; };
+		CFB55415E4FD98976DEB5F4D6FBC38E5 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB61AC1E5F87EFA43F133EE057255A47 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
 		DB9F8E63B016460709C92B3A302AD5AD /* Pods-KampusKent0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KampusKent0-umbrella.h"; sourceTree = "<group>"; };
-		DCD9DE78A7260CA1D999340CF0124D1D /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
-		E5834E7BD925BD3ED29331C1938CC0B7 /* DropDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.debug.xcconfig; sourceTree = "<group>"; };
-		EEBC6D732E1B0C41C6A8D03A8C81CF47 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		E0192EAD53B8763DB85FC9E3089E09A9 /* FormTextFieldClearButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTextFieldClearButton.swift; path = Source/FormTextFieldClearButton.swift; sourceTree = "<group>"; };
+		E5DA61BEAFC43011186D20BB71B5278E /* DecimalInputValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalInputValidator.swift; path = Source/InputValidator/DecimalInputValidator.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB3F5EA9A91131F59C24B11B2293B8E7 /* FormTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FormTextField-dummy.m"; sourceTree = "<group>"; };
+		EC12D740B0C2751B601BB683DC0E45D1 /* CCBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCBackgroundView.swift; path = Classes/CCBackgroundView.swift; sourceTree = "<group>"; };
+		F34499094898D0DD03A4BC85AF65B446 /* CreditCardView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CreditCardView-umbrella.h"; sourceTree = "<group>"; };
 		F8E189C6327770ED4691482696FEF070 /* Pods-KampusKent0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KampusKent0.release.xcconfig"; sourceTree = "<group>"; };
-		F8F61850F82D6CC477FAF8326336FD5A /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4A77B30385FAB6D16B2663EF62E76510 /* Frameworks */ = {
+		74134883C99D7201F4B0289D8412EB24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DFA22A98265F2D732F51993996326FD /* Foundation.framework in Frameworks */,
+				3F1EA2795C6A191C1CB89F4EFA2D5CD4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,63 +149,113 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8283A41750A8B79B91F5C8185B949E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E519DF539EF53ABE7880B88A4A637AF /* Foundation.framework in Frameworks */,
+				8924CFC806352CD0EEDB6C971DC8DCA5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0134BA9764AA33A445C990DC5CD8140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0D66F34BF63FCA729202D99F2DC322 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03D114B328A63C934E528549C2DCFE8D /* Support Files */ = {
+		0CB5AE555DC9600B9BEC63EAB75986FA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DCD9DE78A7260CA1D999340CF0124D1D /* DropDown.modulemap */,
-				AF17E1BF2597D8F37F69DB34CA024E5C /* DropDown-dummy.m */,
-				2F8A529C653A26F8D0B57E1CD7B2B5E6 /* DropDown-Info.plist */,
-				730D85BE0320FD50EA665A82042E5742 /* DropDown-prefix.pch */,
-				F8F61850F82D6CC477FAF8326336FD5A /* DropDown-umbrella.h */,
-				E5834E7BD925BD3ED29331C1938CC0B7 /* DropDown.debug.xcconfig */,
-				9C15EB8657063755722D9C7DC8D72885 /* DropDown.release.xcconfig */,
+				CFB55415E4FD98976DEB5F4D6FBC38E5 /* DropDownCell.xib */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		057ED11B9D5977F85CBBBEF7C3E69DDB /* Pods */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1340602042F82FB2F98974EB1B0C2387 /* DropDown */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1340602042F82FB2F98974EB1B0C2387 /* DropDown */ = {
+		1E2A75489E7FB251484788D0146E80E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3761A77A038E79C8451C03293CDA4FC0 /* DPDConstants.swift */,
-				8DBB2377069976EC65992A59335066D3 /* DPDKeyboardListener.swift */,
-				451F84589A96D52448FD74E261268404 /* DPDUIView+Extension.swift */,
-				2FCC1AD54C344AFD4E184B9586BFE267 /* DropDown.swift */,
-				A87586FE2C9DECB6AE7FCA3238E4A1B8 /* DropDown+Appearance.swift */,
-				93EA092CDFBD4C66A29A9CDEA1DE78E1 /* DropDownCell.swift */,
-				C59647B6F3C67ED72D999C113D892AF0 /* Resources */,
-				03D114B328A63C934E528549C2DCFE8D /* Support Files */,
+				C655C453257937C4D8D76C7CBEDCB11F /* CreditCardView */,
+				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
+				31FB42D7B4767AE8B951CCBB850BA1FD /* FormTextField */,
+				C56827DB3E6D0D622FEED1F0219C5833 /* Pods-KampusKent0 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61539CEA2451F4FE9D31B3E61F828ED6 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				445E01C3FB913F6B13101F7A84311A73 /* DPDConstants.swift */,
+				28425A35422F73B9EC963FF28C5A92BB /* DPDKeyboardListener.swift */,
+				010035A36583719978795355A8264593 /* DPDUIView+Extension.swift */,
+				5BB78D35F2FD71A18D04055A4C9C0BC9 /* DropDown.swift */,
+				35CA070C650BCEC56022A9941D1E10C0 /* DropDown+Appearance.swift */,
+				3402E01FB74B9A97FCD3EE02897B4F81 /* DropDownCell.swift */,
+				0CB5AE555DC9600B9BEC63EAB75986FA /* Resources */,
+				71F1D04682820FF7D0129AD5724ACA7C /* Support Files */,
 			);
 			name = DropDown;
 			path = DropDown;
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		6F2928E6006BFFECA1978A6937AC462E /* CreditCardView */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				EC12D740B0C2751B601BB683DC0E45D1 /* CCBackgroundView.swift */,
+				5482B0CDD0E016D727B4F6CCE01C583A /* CCContentView.swift */,
+				B51B0522DDD9D7193075239D4F4A8531 /* CreditCardView.swift */,
+				DE0D013C02658CC93CDD2B2852C2CCA7 /* Support Files */,
 			);
-			name = iOS;
+			name = CreditCardView;
+			path = CreditCardView;
 			sourceTree = "<group>";
 		};
-		57EDC97548E7221DBE14B848B34723CD /* Products */ = {
+		71F1D04682820FF7D0129AD5724ACA7C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9B6725B782188F18CB76A740433F14E4 /* DropDown */,
-				C56827DB3E6D0D622FEED1F0219C5833 /* Pods-KampusKent0 */,
+				DB61AC1E5F87EFA43F133EE057255A47 /* DropDown.modulemap */,
+				A235F5F1C7CE263283680D2E630BF8FC /* DropDown-dummy.m */,
+				8B5C4425CE15CDD0FA85B48B63F442D9 /* DropDown-Info.plist */,
+				397E2380F59330A70C5FC2B9A101D123 /* DropDown-prefix.pch */,
+				BC574161583E2CB38444F817B7A62E0F /* DropDown-umbrella.h */,
+				74427BF77BB1BA617812114FEF0569EA /* DropDown.debug.xcconfig */,
+				2018BC1260D4969CF5112CB1EF1CB3D2 /* DropDown.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		9764F4F5E97C80CE156F747D80F56C2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F2928E6006BFFECA1978A6937AC462E /* CreditCardView */,
+				61539CEA2451F4FE9D31B3E61F828ED6 /* DropDown */,
+				C4C095ACCB98139D29B2451C950ABC40 /* FormTextField */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		9D5A342E42A5F50ED028AFC5DFE573E2 /* Pods-KampusKent0 */ = {
@@ -155,31 +275,67 @@
 			path = "Target Support Files/Pods-KampusKent0";
 			sourceTree = "<group>";
 		};
-		C59647B6F3C67ED72D999C113D892AF0 /* Resources */ = {
+		C4C095ACCB98139D29B2451C950ABC40 /* FormTextField */ = {
 			isa = PBXGroup;
 			children = (
-				EEBC6D732E1B0C41C6A8D03A8C81CF47 /* DropDownCell.xib */,
+				9C407DA01A485571B03ECDE4B2E338C2 /* CardExpirationDateFormatter.swift */,
+				27DC069570D8B90D79322A3C91C2EAC2 /* CardExpirationDateInputValidator.swift */,
+				4C91A1BC0A4153B98074AFDE6DFFBC4C /* CardNumberFormatter.swift */,
+				E5DA61BEAFC43011186D20BB71B5278E /* DecimalInputValidator.swift */,
+				B90FA4F0EAE0FD2EDC6E12710E19360A /* Formattable.swift */,
+				9BB947DBE2A9E55828B57FE85445D9B3 /* FormTextField.h */,
+				4B59FF4B0EE6D5021E98A04A1BFC0D0D /* FormTextField.swift */,
+				E0192EAD53B8763DB85FC9E3089E09A9 /* FormTextFieldClearButton.swift */,
+				1AF4AD6235E812FD79A907F8ACB6B741 /* FormTextFieldTypeManager.swift */,
+				4018007A30CA07F0F477DF60DC519AB3 /* InputValidatable.swift */,
+				126ECD8AF6635F0035ED1A04401A7C8A /* InputValidator.swift */,
+				4878D5146546F6574C1B33C5BD80FD7A /* RequiredInputValidator.swift */,
+				65928B387B61D1ABE3A4883D05F52530 /* Validation.swift */,
+				D123D9358A9BF1C43916864D1A1FAA6B /* Support Files */,
 			);
-			name = Resources;
+			name = FormTextField;
+			path = FormTextField;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				057ED11B9D5977F85CBBBEF7C3E69DDB /* Pods */,
-				57EDC97548E7221DBE14B848B34723CD /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				9764F4F5E97C80CE156F747D80F56C2C /* Pods */,
+				1E2A75489E7FB251484788D0146E80E4 /* Products */,
 				F0BC3675C4B700EF28ED6B1C9FC6B389 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D123D9358A9BF1C43916864D1A1FAA6B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				51D156D5541F3B3B413B5591C9228E79 /* FormTextField.modulemap */,
+				EB3F5EA9A91131F59C24B11B2293B8E7 /* FormTextField-dummy.m */,
+				4929738B9481BEB62370AA83E2129096 /* FormTextField-Info.plist */,
+				A5D2E205634754CA1E3DA98CCFB45E70 /* FormTextField-prefix.pch */,
+				A980F54483ADACA70AC158D673951949 /* FormTextField-umbrella.h */,
+				C74E7E3A979B047EAEEBB262E58BC801 /* FormTextField.debug.xcconfig */,
+				8C1BDF6B03C38D73B34EBA201AD846BA /* FormTextField.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/FormTextField";
+			sourceTree = "<group>";
+		};
+		DE0D013C02658CC93CDD2B2852C2CCA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B401BFED170A8F8433E7EDCB3DC0C05A /* CreditCardView.modulemap */,
+				1E132B8AC161493372C9BC6508ADFCDA /* CreditCardView-dummy.m */,
+				2158855C72F3EC14E05930F5F6AC8C27 /* CreditCardView-Info.plist */,
+				7ABB0D977C2E7AC405E9B55DAA59EB5B /* CreditCardView-prefix.pch */,
+				F34499094898D0DD03A4BC85AF65B446 /* CreditCardView-umbrella.h */,
+				7F78F950689B1FB753BF5A0F14C6FB1B /* CreditCardView.debug.xcconfig */,
+				8B43A57D0F7C4331D50E174F8C25881C /* CreditCardView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CreditCardView";
 			sourceTree = "<group>";
 		};
 		F0BC3675C4B700EF28ED6B1C9FC6B389 /* Targets Support Files */ = {
@@ -193,11 +349,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		69D4A66FF7C12052F3979816446812A3 /* Headers */ = {
+		2931DC3B3BC280BBE671163B63932FB8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				511C6D7E204F4B54703B4B5CC9725622 /* Pods-KampusKent0-umbrella.h in Headers */,
+				37638B80D2B71BCA8BC4A4E9FC01E534 /* CreditCardView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		479A5D97C7C0771FAABA745CA309B788 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50B41343936922017DFA46EE21ECB6B /* FormTextField.h in Headers */,
+				27719E1719165FEBCA7D1DAF939C9E72 /* FormTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C5142531C204D1D832C33AF7D1224 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3314C1EA1066E2548B40E90F64DE4C /* Pods-KampusKent0-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +385,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		46DFE403432A84887C89208F7612BC1D /* CreditCardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFCCE69176C52589375F960D1E4DB5F /* Build configuration list for PBXNativeTarget "CreditCardView" */;
+			buildPhases = (
+				2931DC3B3BC280BBE671163B63932FB8 /* Headers */,
+				930764BC51F3AEDAD1C66576B22E4265 /* Sources */,
+				A0134BA9764AA33A445C990DC5CD8140 /* Frameworks */,
+				E81112FAEFD6C68CFDBA6126A02BA5BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditCardView;
+			productName = CreditCardView;
+			productReference = C655C453257937C4D8D76C7CBEDCB11F /* CreditCardView */;
+			productType = "com.apple.product-type.framework";
+		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53052E6CBA1E65D6EF818199E617AC68 /* Build configuration list for PBXNativeTarget "DropDown" */;
@@ -232,21 +423,41 @@
 		};
 		FA0B67F7A5A4BA1C7C7BD901C4C963EC /* Pods-KampusKent0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55DB99E59A8411D4CEF9105C87222B44 /* Build configuration list for PBXNativeTarget "Pods-KampusKent0" */;
+			buildConfigurationList = F0B28C581C1503E120D1BD78104B39F9 /* Build configuration list for PBXNativeTarget "Pods-KampusKent0" */;
 			buildPhases = (
-				69D4A66FF7C12052F3979816446812A3 /* Headers */,
-				75F64BD444E5582952B547E85C2A44D4 /* Sources */,
-				4A77B30385FAB6D16B2663EF62E76510 /* Frameworks */,
-				A36AB18938351AEE97E6D933ECEE6A20 /* Resources */,
+				694C5142531C204D1D832C33AF7D1224 /* Headers */,
+				86C5DC1D095035BB4C7BFBA405CDEEA1 /* Sources */,
+				74134883C99D7201F4B0289D8412EB24 /* Frameworks */,
+				A0DE5B94C9328381C4D426A23F996C97 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0ABFFE6AB63E8A78A2E9EF9362A04FF9 /* PBXTargetDependency */,
+				EB59EF353BD08DC4BF051A3784CBD29D /* PBXTargetDependency */,
+				EFE027EC39D0EE37906824A3F8ADCD29 /* PBXTargetDependency */,
+				60F6C7EB30783568DD80586FC6A4425B /* PBXTargetDependency */,
 			);
 			name = "Pods-KampusKent0";
 			productName = Pods_KampusKent0;
 			productReference = C56827DB3E6D0D622FEED1F0219C5833 /* Pods-KampusKent0 */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E0E20A40672A33C8FFE560CC5E300F /* Build configuration list for PBXNativeTarget "FormTextField" */;
+			buildPhases = (
+				479A5D97C7C0771FAABA745CA309B788 /* Headers */,
+				2149F177678DC152DF3DB739C8A69798 /* Sources */,
+				8283A41750A8B79B91F5C8185B949E4C /* Frameworks */,
+				ECDF034E54447F044754847BAE2E7C5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormTextField;
+			productName = FormTextField;
+			productReference = 31FB42D7B4767AE8B951CCBB850BA1FD /* FormTextField */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -267,18 +478,34 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 57EDC97548E7221DBE14B848B34723CD /* Products */;
+			productRefGroup = 1E2A75489E7FB251484788D0146E80E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				46DFE403432A84887C89208F7612BC1D /* CreditCardView */,
 				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
+				FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */,
 				FA0B67F7A5A4BA1C7C7BD901C4C963EC /* Pods-KampusKent0 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A36AB18938351AEE97E6D933ECEE6A20 /* Resources */ = {
+		A0DE5B94C9328381C4D426A23F996C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81112FAEFD6C68CFDBA6126A02BA5BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDF034E54447F044754847BAE2E7C5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,6 +523,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2149F177678DC152DF3DB739C8A69798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5332736303B5D0E5F149B72F3819346 /* CardExpirationDateFormatter.swift in Sources */,
+				B5F859BBA322A177500F16B37F426E70 /* CardExpirationDateInputValidator.swift in Sources */,
+				F019BD2498636C09671A70AF57B559CD /* CardNumberFormatter.swift in Sources */,
+				2BCB5765265D70CA24079AB63949E4D2 /* DecimalInputValidator.swift in Sources */,
+				E40BBB1782503594F6FA87CA419F42B3 /* Formattable.swift in Sources */,
+				1F8CA56DDB4D3C03A8E68ADBE17E1936 /* FormTextField.swift in Sources */,
+				A341742B21F5CB41E97300E76C47E32C /* FormTextField-dummy.m in Sources */,
+				8D7E3F259A58ED961E9F7262D250CD68 /* FormTextFieldClearButton.swift in Sources */,
+				51C970BDD37360B18DD62D878937E81D /* FormTextFieldTypeManager.swift in Sources */,
+				3E4BC78628D0BAF038D6085DA3397AE5 /* InputValidatable.swift in Sources */,
+				AB6B7AFA23757E4018C35C0D4E87B903 /* InputValidator.swift in Sources */,
+				B35570E42B0B5DA2EA7FE6FCE711CC24 /* RequiredInputValidator.swift in Sources */,
+				9ACBACAC93045EFB130E59C2681D1384 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48864C435B3DB37698CF568C638CF98F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,27 +557,124 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75F64BD444E5582952B547E85C2A44D4 /* Sources */ = {
+		86C5DC1D095035BB4C7BFBA405CDEEA1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9859201F5D865A3C30D3ADEC2F65095 /* Pods-KampusKent0-dummy.m in Sources */,
+				378552912F0F34D18E64FBF9373676BF /* Pods-KampusKent0-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930764BC51F3AEDAD1C66576B22E4265 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A99CFE002E5FDB16FEF3128FA88140 /* CCBackgroundView.swift in Sources */,
+				757FE05A4E9FC8E050083FF9999706DB /* CCContentView.swift in Sources */,
+				3DF3272868CE62AA08CF98D1EA2330E0 /* CreditCardView.swift in Sources */,
+				8CA8C7BD622FE19A58B9802937473536 /* CreditCardView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0ABFFE6AB63E8A78A2E9EF9362A04FF9 /* PBXTargetDependency */ = {
+		60F6C7EB30783568DD80586FC6A4425B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FormTextField;
+			target = FA56E39EF6C470C3DFC0A23077F6D611 /* FormTextField */;
+			targetProxy = FE50F92D3D9C770469A29EF67DBC508C /* PBXContainerItemProxy */;
+		};
+		EB59EF353BD08DC4BF051A3784CBD29D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CreditCardView;
+			target = 46DFE403432A84887C89208F7612BC1D /* CreditCardView */;
+			targetProxy = D9650F55C84B7692968A9AA8D1EAE1F8 /* PBXContainerItemProxy */;
+		};
+		EFE027EC39D0EE37906824A3F8ADCD29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DropDown;
 			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = B44615A9FDD92098CBC247DA6BCB6A04 /* PBXContainerItemProxy */;
+			targetProxy = AEDE05F3F4AE73CD9BA14676860AE991 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		144929198823ECB33D84259A6C9416E1 /* Debug */ = {
+		362919FE972B25107F98F406B0D45F1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E189C6327770ED4691482696FEF070 /* Pods-KampusKent0.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A517093209A56570E33F9E5DB8F9712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C1BDF6B03C38D73B34EBA201AD846BA /* FormTextField.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FormTextField/FormTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FormTextField/FormTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FormTextField/FormTextField.modulemap";
+				PRODUCT_MODULE_NAME = FormTextField;
+				PRODUCT_NAME = FormTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7E6744442AF7BCC24FF9D53F355C51B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A84331E8A8BE7764309D5B80F15CD36D /* Pods-KampusKent0.debug.xcconfig */;
 			buildSettings = {
@@ -361,6 +705,41 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EA9A9A1DC785863F9ACCD0DC31AA3E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74E7E3A979B047EAEEBB262E58BC801 /* FormTextField.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FormTextField/FormTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FormTextField/FormTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FormTextField/FormTextField.modulemap";
+				PRODUCT_MODULE_NAME = FormTextField;
+				PRODUCT_NAME = FormTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -433,44 +812,6 @@
 			};
 			name = Debug;
 		};
-		94B5CAF75D92F5CC63E254A0CC1D87E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8E189C6327770ED4691482696FEF070 /* Pods-KampusKent0.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KampusKent0/Pods-KampusKent0.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -535,7 +876,7 @@
 		};
 		C24518E891FAA59668669823639498EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C15EB8657063755722D9C7DC8D72885 /* DropDown.release.xcconfig */;
+			baseConfigurationReference = 2018BC1260D4969CF5112CB1EF1CB3D2 /* DropDown.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -568,9 +909,78 @@
 			};
 			name = Release;
 		};
+		C9C5C6C56BB07F3BC6DDBF8BCB783B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B43A57D0F7C4331D50E174F8C25881C /* CreditCardView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CreditCardView/CreditCardView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CreditCardView/CreditCardView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CreditCardView/CreditCardView.modulemap";
+				PRODUCT_MODULE_NAME = CreditCardView;
+				PRODUCT_NAME = CreditCardView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D654833C2AB846BD3BD6066643048C6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F78F950689B1FB753BF5A0F14C6FB1B /* CreditCardView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CreditCardView/CreditCardView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CreditCardView/CreditCardView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CreditCardView/CreditCardView.modulemap";
+				PRODUCT_MODULE_NAME = CreditCardView;
+				PRODUCT_NAME = CreditCardView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E2CDE7BD114C532701D2E79C5CB4CAA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5834E7BD925BD3ED29331C1938CC0B7 /* DropDown.debug.xcconfig */;
+			baseConfigurationReference = 74427BF77BB1BA617812114FEF0569EA /* DropDown.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -623,11 +1033,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55DB99E59A8411D4CEF9105C87222B44 /* Build configuration list for PBXNativeTarget "Pods-KampusKent0" */ = {
+		6CFCCE69176C52589375F960D1E4DB5F /* Build configuration list for PBXNativeTarget "CreditCardView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				144929198823ECB33D84259A6C9416E1 /* Debug */,
-				94B5CAF75D92F5CC63E254A0CC1D87E3 /* Release */,
+				D654833C2AB846BD3BD6066643048C6A /* Debug */,
+				C9C5C6C56BB07F3BC6DDBF8BCB783B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E0E20A40672A33C8FFE560CC5E300F /* Build configuration list for PBXNativeTarget "FormTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA9A9A1DC785863F9ACCD0DC31AA3E1 /* Debug */,
+				6A517093209A56570E33F9E5DB8F9712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B28C581C1503E120D1BD78104B39F9 /* Build configuration list for PBXNativeTarget "Pods-KampusKent0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6744442AF7BCC24FF9D53F355C51B5 /* Debug */,
+				362919FE972B25107F98F406B0D45F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

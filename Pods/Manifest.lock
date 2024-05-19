@@ -1,16 +1,24 @@
 PODS:
+  - CreditCardView (0.1.1)
   - DropDown (2.3.13)
+  - FormTextField (3.1.0)
 
 DEPENDENCIES:
+  - CreditCardView
   - DropDown
+  - FormTextField
 
 SPEC REPOS:
   trunk:
+    - CreditCardView
     - DropDown
+    - FormTextField
 
 SPEC CHECKSUMS:
+  CreditCardView: 2f4c9dbede61e2867067b1dbdb8a2b3366d04500
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FormTextField: 229e496b8dae002c5062ea5e961e2140528782e2
 
-PODFILE CHECKSUM: bfb81706a85d7a14661de570dadf5ed9c2f4cd97
+PODFILE CHECKSUM: 06de0288c4b832e8cd94efe26ace3ea45e5992ad
 
 COCOAPODS: 1.12.1

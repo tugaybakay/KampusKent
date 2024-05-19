@@ -8,10 +8,18 @@
 import Foundation
 import Firebase
 
-struct KKTicket {
-    let id = UUID().uuid
-    let user: String
+struct KKTicket: Codable {
+    var id: String = UUID().uuidString
+    let user: String = Auth.auth().currentUser?.email ?? ""
     let startingStationID: Int
     let destinationStationID: Int
     let date: Timestamp
+    
+    enum CodingKeys: String,CodingKey {
+        case id
+        case user
+        case startingStationID
+        case destinationStationID
+        case date
+    }
 }

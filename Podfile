@@ -7,6 +7,8 @@ target 'KampusKent0' do
 
   # Pods for KampusKent0
   pod 'DropDown'
+  pod 'CreditCardView'
+  pod 'FormTextField'
 
 post_install do |installer|
     installer.generated_projects.each do |project|

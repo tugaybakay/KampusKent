@@ -18,10 +18,11 @@ class KKTabBarVC: UITabBarController {
     
     private func configureTabBar() {
         let homeVC = UINavigationController(rootViewController: KKHomeVC())
-        let ticketVC = KKTicketVC()
+        let ticketVC = UINavigationController(rootViewController: KKTicketVC())
         
-        homeVC.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
-        ticketVC.tabBarItem = UITabBarItem(tabBarSystemItem: .topRated, tag: 2)
+        
+        homeVC.tabBarItem =  UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
+        ticketVC.tabBarItem = UITabBarItem(title: "Tickets", image: UIImage(systemName: "doc"), tag: 2)
         
         self.setViewControllers([homeVC,ticketVC], animated: true)
         tabBar.tintColor = .systemYellow
