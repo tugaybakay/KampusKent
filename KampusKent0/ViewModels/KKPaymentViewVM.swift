@@ -10,6 +10,10 @@ import Foundation
 final class KKPaymentViewVM {
     var cards: [KKCard] = []
     
+    func deleteCard(card: KKCard) {
+        KKFirebaseCRUDManager.shared.deleteCard(card: card)
+    }
+    
     func fetchCards(_ completion: @escaping (Bool) -> Void) {
         KKFirebaseCRUDManager.shared.fetchCardsFromFirebase { result in
             switch result {

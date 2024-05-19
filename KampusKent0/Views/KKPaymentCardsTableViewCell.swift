@@ -28,10 +28,9 @@ class KKPaymentCardsTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(label)
-        contentView.addSubview(cardIconView)
+        contentView.addSubViews(cardIconView,label)
         accessoryType = .disclosureIndicator
-        translatesAutoresizingMaskIntoConstraints = false
+//        translatesAutoresizingMaskIntoConstraints = false
         setUpConstraints()
         // Initialization code
     }
@@ -56,11 +55,11 @@ class KKPaymentCardsTableViewCell: UITableViewCell {
             
             cardIconView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             cardIconView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: padding),
-            cardIconView.widthAnchor.constraint(equalToConstant: 40),
-            cardIconView.heightAnchor.constraint(equalToConstant: 40),
+            cardIconView.widthAnchor.constraint(equalToConstant: 60),
+            cardIconView.heightAnchor.constraint(equalToConstant: 60),
             
 //            label.topAnchor.constraint(equalTo: contentView.topAnchor, constant: padding),
-            label.leftAnchor.constraint(equalTo: cardIconView.rightAnchor, constant: 10),
+            label.leftAnchor.constraint(equalTo: cardIconView.rightAnchor, constant: 15),
             label.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -padding),
 //            label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -padding)
             label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)

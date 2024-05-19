@@ -7,14 +7,19 @@
 
 import UIKit
 
-class KKTicketsView: UIView {
+protocol KKTicetsViewDelegate: AnyObject {
+    func didTapCell(qrImage: UIImage?)
+}
+
+final class KKTicketsView: UIView {
     
     let viewModel = KKTicketsViewVM()
+    var delegate: KKTicetsViewDelegate?
     
     let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        
+        tableView.register(KKTicketsTableViewCell.self, forCellReuseIdentifier: KKTicketsTableViewCell.identifier)
         return tableView
     }()
 
@@ -25,7 +30,7 @@ class KKTicketsView: UIView {
         addSubview(tableView)
         setUpConstraints()
         configureTableView()
-        viewModel.fetchTickets { [weak self] bool in
+        viewModel.subscribeClosure { [weak self] bool in
             if bool {
                 self?.tableView.reloadData()
             }
@@ -56,16 +61,20 @@ class KKTicketsView: UIView {
 extension KKTicketsView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModel.cellViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: KKTicketsTableViewCell.identifier, for: indexPath) as! KKTicketsTableViewCell
+        cell.configure(with: viewModel.cellViewModels[indexPath.row])
+        return cell
     }
-    
     
 }
 
 extension KKTicketsView: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.didTapCell(qrImage: viewModel.generateQRCode(index: indexPath.row))
+    }
 }

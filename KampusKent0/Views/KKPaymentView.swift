@@ -35,7 +35,6 @@ class KKPaymentView: UIView {
         setUpConstraints()
         configureAddCard()
         viewModel.fetchCards { bool in
-            print("geldi!")
             if bool {
                 self.tableView.reloadData()
             }
@@ -84,11 +83,25 @@ extension KKPaymentView: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 110
+    }
+    
 }
 
 extension KKPaymentView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         delegate?.passConfirmPayment(card: viewModel.cards[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let item = UIContextualAction(style: .destructive, title: "Delete") { [weak self] (contextualAction, view, boolValue) in
+            guard let self = self else { return }
+            self.viewModel.deleteCard(card: self.viewModel.cards[indexPath.row])
+        }
+        item.image = UIImage(systemName: "trash")?.withTintColor(.white)
+        let swipeActions = UISwipeActionsConfiguration(actions: [item])
+        return swipeActions
     }
 }

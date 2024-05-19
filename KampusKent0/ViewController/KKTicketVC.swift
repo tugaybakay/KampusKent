@@ -11,20 +11,17 @@ class KKTicketVC: UIViewController {
 
     let ticketsView = KKTicketsView()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(ticketsView)
         title = "Tickets"
         navigationController?.navigationBar.prefersLargeTitles = true
         configureView()
-        
-            
-        
-        
     }
     
     private func configureView() {
+        ticketsView.delegate = self
+        
         NSLayoutConstraint.activate([
             ticketsView.topAnchor.constraint(equalTo: view.topAnchor),
             ticketsView.leftAnchor.constraint(equalTo: view.leftAnchor),
@@ -33,4 +30,15 @@ class KKTicketVC: UIViewController {
         ])
     }
 
+}
+
+extension KKTicketVC: KKTicetsViewDelegate {
+    func didTapCell(qrImage: UIImage?) {
+        if let qrImage = qrImage {
+            let destinationVC = KKQRCodeVC(qrImage: qrImage)
+            navigationController?.pushViewController(destinationVC, animated: true)
+        }else {
+            self.presentKKAlertOnMainThread(title: "Bad Stuff Happend", message: "We oould not generate QR Code. Please try again 😢", buttonTitle: "Ok")
+        }
+    }
 }

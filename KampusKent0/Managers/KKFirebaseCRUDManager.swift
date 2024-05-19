@@ -18,33 +18,35 @@ final class KKFirebaseCRUDManager {
     private init() {}
     
     func fetchCardsFromFirebase(_ completion: @escaping (Result<[KKCard],Error>) -> Void) {
-        firestore.collection("cards").whereField("user", isEqualTo: userEmail).addSnapshotListener { snapshot, error in
-            if let error = error {
-                completion(.failure(error))
-            }else {
-                var cards: [KKCard] = []
-                if let snap = snapshot {
-                    let docs = snap.documents
-                    for doc in docs {
-                        let data = doc.data()
-                        let user = data["user"] as! String
-                        let cvc = data["CVC"] as! String
-                        let cardNumber = data["cardNumber"] as! String
-                        let expirationDate = data["expirationDate"] as! String
-                        let card = KKCard(user: user, cardNumber: cardNumber, expirationDate: expirationDate, CVC: cvc)
-                        cards.append(card)
+        firestore.collection("cards")
+            .whereField("user", isEqualTo: userEmail)
+            .addSnapshotListener { snapshot, error in
+                if let error = error {
+                    completion(.failure(error))
+                }else {
+                    var cards: [KKCard] = []
+                    if let snap = snapshot {
+                        let docs = snap.documents
+                        for doc in docs {
+                            let data = doc.data()
+                            let user = data["user"] as! String
+                            let cvc = data["CVC"] as! String
+                            let cardNumber = data["cardNumber"] as! String
+                            let expirationDate = data["expirationDate"] as! String
+                            let card = KKCard(user: user, cardNumber: cardNumber, expirationDate: expirationDate, CVC: cvc)
+                            cards.append(card)
+                        }
+                        completion(.success(cards))
                     }
-                    completion(.success(cards))
+                    
                 }
-                
             }
-        }
     }
     
     func fetchTicketsFromFirebase(_ completion: @escaping (Result<[KKTicket],Error>) -> Void) {
         firestore.collection("tickets")
             .whereField("user", isEqualTo: userEmail)
-            .order(by: "date")
+            .order(by: "date", descending: true)
             .addSnapshotListener { snap, error in
                 if let error = error {
                     completion(.failure(error))
@@ -68,7 +70,6 @@ final class KKFirebaseCRUDManager {
     func addTicketToFirebase(with ticket: KKTicket) {
         do{
             try firestore.collection("tickets").addDocument(from: ticket)
-            print("eklendi!")
         }catch{
             print(error.localizedDescription)
         }
@@ -77,7 +78,6 @@ final class KKFirebaseCRUDManager {
     func addCardToFirebase(with card: KKCard) {
         do{
             try firestore.collection("cards").addDocument(from: card)
-            print("eklendi!")
         }catch{
             print(error.localizedDescription)
         }
@@ -111,7 +111,6 @@ final class KKFirebaseCRUDManager {
                         let name = data["name"] as! String
                         let location = data["location"] as! GeoPoint
                         let station = KKStation(id: id, name: name, location: location)
-                        print(name)
                         stations.append(station)
                     }
                     completion(.success(stations))
@@ -120,6 +119,45 @@ final class KKFirebaseCRUDManager {
         }
     }
     
+    func fetchStationName(with id: Int, completion: @escaping (String?) -> Void) {
+        firestore.collection("duraklar")
+            .whereField("id", isEqualTo: id)
+            .getDocuments { snapshot, error in
+                if let _ = error {
+                    completion(nil)
+                }else {
+                    if let snapshot = snapshot {
+                        let docs = snapshot.documents
+                        for doc in docs {
+                            let data = doc.data()
+                            let name = data["name"] as! String
+                            print(name)
+                            completion(name)
+                            return
+                        }
+                    }
+                }
+            }
+    }
+    
+    func deleteCard(card: KKCard) {
+        firestore.collection("cards")
+            .whereField("cardNumber", isEqualTo: card.cardNumber)
+            .getDocuments { [weak self] snapshot, error in
+                if let _ = error {
+                    //TODO: Error handling
+                }else {
+                    if let snap = snapshot {
+                        let docs = snap.documents
+                        for doc in docs {
+                            self?.firestore.collection("cards").document(doc.documentID).delete()
+                        }
+                        
+                    }
+                }
+            }
+    }
+        
     func logOut() {
         do{
             try Auth.auth().signOut()
@@ -127,5 +165,6 @@ final class KKFirebaseCRUDManager {
             print(error.localizedDescription)
         }
     }
+    
 }
 
