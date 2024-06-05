@@ -8,7 +8,7 @@
 
 import UIKit
 import MapKit
-import CoreLocation
+//import CoreLocation
 
 final class KKHomeVC: UIViewController {
      
@@ -85,7 +85,6 @@ final class KKHomeVC: UIViewController {
 //       }
 //}
 
-@available(iOS 15, *)
 extension KKHomeVC: KKHomeViewDelegate {
     func doneButtonDidTap(startingStation: KKStation, destinationStation: KKStation) {
         let ticket = KKTicket(startingStationID: startingStation.id, destinationStationID: destinationStation.id, date: .init(date: .now))

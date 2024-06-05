@@ -22,7 +22,6 @@ final class KKHomeViewVM {
         KKFirebaseCRUDManager.shared.fetchStations { [weak self] result in
             switch result {
             case .success(let stationsFromFirebase):
-                print("count \(stationsFromFirebase.count)")
                 self?.stations.append(contentsOf: stationsFromFirebase)
             case .failure(let error):
                 print(error.rawValue)

@@ -48,6 +48,15 @@
 		22022A7B2BF7B17D00F7DF78 /* KKAddCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */; };
 		22022A7F2BF7BFC400F7DF78 /* KKCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A7E2BF7BFC400F7DF78 /* KKCard.swift */; };
 		22022A812BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */; };
+		2221BCDB2C0DF1F00062CF34 /* KKUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221BCDA2C0DF1F00062CF34 /* KKUser.swift */; };
+		2221BCDD2C0DF23C0062CF34 /* KKDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221BCDC2C0DF23C0062CF34 /* KKDriver.swift */; };
+		2221BCDF2C0DF26E0062CF34 /* KKBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221BCDE2C0DF26E0062CF34 /* KKBus.swift */; };
+		2221BCE12C0DFC4F0062CF34 /* KKDriverHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221BCE02C0DFC4F0062CF34 /* KKDriverHomeVC.swift */; };
+		22540B4B2C0FBBF1006CD259 /* KKDriverTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22540B4A2C0FBBF1006CD259 /* KKDriverTabBarVC.swift */; };
+		22540B4F2C0FBE43006CD259 /* KKDriverHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22540B4E2C0FBE43006CD259 /* KKDriverHomeView.swift */; };
+		22540B532C0FC100006CD259 /* KKVoyageDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22540B522C0FC100006CD259 /* KKVoyageDetailVC.swift */; };
+		22540B552C0FC126006CD259 /* KKVoyageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22540B542C0FC126006CD259 /* KKVoyageDetailView.swift */; };
+		22540B572C1068A7006CD259 /* KKVoyage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22540B562C1068A7006CD259 /* KKVoyage.swift */; };
 		2279DB962BFA71630088335F /* KKTicketsTableViewCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279DB952BFA71630088335F /* KKTicketsTableViewCellVM.swift */; };
 		2279DB982BFA85470088335F /* KKQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279DB972BFA85470088335F /* KKQRCodeVC.swift */; };
 		2279DB9A2BFA85600088335F /* KKQRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279DB992BFA85600088335F /* KKQRCodeView.swift */; };
@@ -96,6 +105,15 @@
 		22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKAddCardVC.swift; sourceTree = "<group>"; };
 		22022A7E2BF7BFC400F7DF78 /* KKCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKCard.swift; sourceTree = "<group>"; };
 		22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPaymentCardsTableViewCell.swift; sourceTree = "<group>"; };
+		2221BCDA2C0DF1F00062CF34 /* KKUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKUser.swift; sourceTree = "<group>"; };
+		2221BCDC2C0DF23C0062CF34 /* KKDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDriver.swift; sourceTree = "<group>"; };
+		2221BCDE2C0DF26E0062CF34 /* KKBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKBus.swift; sourceTree = "<group>"; };
+		2221BCE02C0DFC4F0062CF34 /* KKDriverHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDriverHomeVC.swift; sourceTree = "<group>"; };
+		22540B4A2C0FBBF1006CD259 /* KKDriverTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDriverTabBarVC.swift; sourceTree = "<group>"; };
+		22540B4E2C0FBE43006CD259 /* KKDriverHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKDriverHomeView.swift; sourceTree = "<group>"; };
+		22540B522C0FC100006CD259 /* KKVoyageDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKVoyageDetailVC.swift; sourceTree = "<group>"; };
+		22540B542C0FC126006CD259 /* KKVoyageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKVoyageDetailView.swift; sourceTree = "<group>"; };
+		22540B562C1068A7006CD259 /* KKVoyage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKVoyage.swift; sourceTree = "<group>"; };
 		2279DB952BFA71630088335F /* KKTicketsTableViewCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKTicketsTableViewCellVM.swift; sourceTree = "<group>"; };
 		2279DB972BFA85470088335F /* KKQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKQRCodeVC.swift; sourceTree = "<group>"; };
 		2279DB992BFA85600088335F /* KKQRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKQRCodeView.swift; sourceTree = "<group>"; };
@@ -163,15 +181,10 @@
 		22022A3B2BF769B400F7DF78 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				22540B512C0FBF6A006CD259 /* DriverViewController */,
+				22540B502C0FBF49006CD259 /* UserViewController */,
 				22022A1E2BF765DA00F7DF78 /* KKLoginVC.swift */,
-				22022A3C2BF769D800F7DF78 /* KKHomeVC.swift */,
 				22022A3E2BF769F400F7DF78 /* KKAlertVC.swift */,
-				22022A402BF76A1600F7DF78 /* KKTabBarVC.swift */,
-				22022A422BF76A3300F7DF78 /* KKTicketVC.swift */,
-				22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */,
-				22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */,
-				22921EA32BF8F3B8004DE95E /* KKConfirmPaymentVC.swift */,
-				2279DB972BFA85470088335F /* KKQRCodeVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -179,17 +192,9 @@
 		22022A442BF76A4300F7DF78 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22540B4D2C0FBE2F006CD259 /* DriverViews */,
+				22540B4C2C0FBE10006CD259 /* UserViews */,
 				22022A4B2BF76A9D00F7DF78 /* CustomViews */,
-				22022A452BF76A5C00F7DF78 /* KKAlertContainerView.swift */,
-				22022A472BF76A7700F7DF78 /* KKHomeView.swift */,
-				22022A492BF76A9200F7DF78 /* KKLoginView.swift */,
-				22022A742BF7A3D300F7DF78 /* KKPaymentView.swift */,
-				22022A782BF7A8C000F7DF78 /* KKPaymentAddCardView.swift */,
-				22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */,
-				22921EA52BF8F3E2004DE95E /* KKConfirmPaymentView.swift */,
-				22921EA72BF97A36004DE95E /* KKTicketsView.swift */,
-				22A64E6D2BFA036D00AF4229 /* KKTicketsTableViewCell.swift */,
-				2279DB992BFA85600088335F /* KKQRCodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +236,10 @@
 				22022A5C2BF76C6400F7DF78 /* KKStation.swift */,
 				22022A702BF78A7F00F7DF78 /* KKTicket.swift */,
 				22022A7E2BF7BFC400F7DF78 /* KKCard.swift */,
+				2221BCDA2C0DF1F00062CF34 /* KKUser.swift */,
+				2221BCDC2C0DF23C0062CF34 /* KKDriver.swift */,
+				2221BCDE2C0DF26E0062CF34 /* KKBus.swift */,
+				22540B562C1068A7006CD259 /* KKVoyage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -265,6 +274,56 @@
 				2279DB952BFA71630088335F /* KKTicketsTableViewCellVM.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		22540B4C2C0FBE10006CD259 /* UserViews */ = {
+			isa = PBXGroup;
+			children = (
+				22022A452BF76A5C00F7DF78 /* KKAlertContainerView.swift */,
+				22022A472BF76A7700F7DF78 /* KKHomeView.swift */,
+				22022A492BF76A9200F7DF78 /* KKLoginView.swift */,
+				22022A742BF7A3D300F7DF78 /* KKPaymentView.swift */,
+				22022A782BF7A8C000F7DF78 /* KKPaymentAddCardView.swift */,
+				22022A802BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift */,
+				22921EA52BF8F3E2004DE95E /* KKConfirmPaymentView.swift */,
+				22921EA72BF97A36004DE95E /* KKTicketsView.swift */,
+				22A64E6D2BFA036D00AF4229 /* KKTicketsTableViewCell.swift */,
+				2279DB992BFA85600088335F /* KKQRCodeView.swift */,
+			);
+			path = UserViews;
+			sourceTree = "<group>";
+		};
+		22540B4D2C0FBE2F006CD259 /* DriverViews */ = {
+			isa = PBXGroup;
+			children = (
+				22540B4E2C0FBE43006CD259 /* KKDriverHomeView.swift */,
+				22540B542C0FC126006CD259 /* KKVoyageDetailView.swift */,
+			);
+			path = DriverViews;
+			sourceTree = "<group>";
+		};
+		22540B502C0FBF49006CD259 /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22022A3C2BF769D800F7DF78 /* KKHomeVC.swift */,
+				22022A402BF76A1600F7DF78 /* KKTabBarVC.swift */,
+				22022A422BF76A3300F7DF78 /* KKTicketVC.swift */,
+				22022A722BF7A1EF00F7DF78 /* KKPaymentVC.swift */,
+				22022A7A2BF7B17D00F7DF78 /* KKAddCardVC.swift */,
+				22921EA32BF8F3B8004DE95E /* KKConfirmPaymentVC.swift */,
+				2279DB972BFA85470088335F /* KKQRCodeVC.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
+		22540B512C0FBF6A006CD259 /* DriverViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2221BCE02C0DFC4F0062CF34 /* KKDriverHomeVC.swift */,
+				22540B4A2C0FBBF1006CD259 /* KKDriverTabBarVC.swift */,
+				22540B522C0FC100006CD259 /* KKVoyageDetailVC.swift */,
+			);
+			path = DriverViewController;
 			sourceTree = "<group>";
 		};
 		66FD79FC0253D78CB7F383DB /* Frameworks */ = {
@@ -416,9 +475,13 @@
 				22022A4D2BF76AB700F7DF78 /* KKBodyLabel.swift in Sources */,
 				22022A432BF76A3300F7DF78 /* KKTicketVC.swift in Sources */,
 				22022A462BF76A5C00F7DF78 /* KKAlertContainerView.swift in Sources */,
+				2221BCDF2C0DF26E0062CF34 /* KKBus.swift in Sources */,
 				22022A752BF7A3D300F7DF78 /* KKPaymentView.swift in Sources */,
+				2221BCDD2C0DF23C0062CF34 /* KKDriver.swift in Sources */,
 				2279DB962BFA71630088335F /* KKTicketsTableViewCellVM.swift in Sources */,
+				22540B572C1068A7006CD259 /* KKVoyage.swift in Sources */,
 				22022A4F2BF76ACB00F7DF78 /* KKButton.swift in Sources */,
+				22540B4F2C0FBE43006CD259 /* KKDriverHomeView.swift in Sources */,
 				22022A1F2BF765DA00F7DF78 /* KKLoginVC.swift in Sources */,
 				22022A532BF76AF600F7DF78 /* KKTitleLabel.swift in Sources */,
 				22022A3F2BF769F400F7DF78 /* KKAlertVC.swift in Sources */,
@@ -427,10 +490,12 @@
 				22022A4A2BF76A9200F7DF78 /* KKLoginView.swift in Sources */,
 				22022A812BF7C3AE00F7DF78 /* KKPaymentCardsTableViewCell.swift in Sources */,
 				22022A6F2BF77F4D00F7DF78 /* KKCustomDDCell.swift in Sources */,
+				2221BCE12C0DFC4F0062CF34 /* KKDriverHomeVC.swift in Sources */,
 				22022A412BF76A1600F7DF78 /* KKTabBarVC.swift in Sources */,
 				22921EA42BF8F3B8004DE95E /* KKConfirmPaymentVC.swift in Sources */,
 				22022A7F2BF7BFC400F7DF78 /* KKCard.swift in Sources */,
 				22022A5B2BF76C2600F7DF78 /* KKFirebaseCRUDManager.swift in Sources */,
+				22540B552C0FC126006CD259 /* KKVoyageDetailView.swift in Sources */,
 				22022A5D2BF76C6400F7DF78 /* KKStation.swift in Sources */,
 				22022A512BF76AE300F7DF78 /* KKTextField.swift in Sources */,
 				22022A3D2BF769D800F7DF78 /* KKHomeVC.swift in Sources */,
@@ -438,7 +503,9 @@
 				2279DB982BFA85470088335F /* KKQRCodeVC.swift in Sources */,
 				22022A652BF76D7C00F7DF78 /* KKHomeViewVM.swift in Sources */,
 				22022A672BF76D9A00F7DF78 /* KKLoginViewVM.swift in Sources */,
+				22540B532C0FC100006CD259 /* KKVoyageDetailVC.swift in Sources */,
 				22022A582BF76BEC00F7DF78 /* UIViewController+Extensions.swift in Sources */,
+				22540B4B2C0FBBF1006CD259 /* KKDriverTabBarVC.swift in Sources */,
 				22022A562BF76BD900F7DF78 /* UIView+Extensions.swift in Sources */,
 				22022A712BF78A7F00F7DF78 /* KKTicket.swift in Sources */,
 				22921EAA2BF97CFA004DE95E /* KKTicketsViewVM.swift in Sources */,
@@ -446,6 +513,7 @@
 				22022A692BF77B3900F7DF78 /* KKCustomDropDownCell.swift in Sources */,
 				22022A732BF7A1EF00F7DF78 /* KKPaymentVC.swift in Sources */,
 				22921EA62BF8F3E2004DE95E /* KKConfirmPaymentView.swift in Sources */,
+				2221BCDB2C0DF1F00062CF34 /* KKUser.swift in Sources */,
 				22022A1D2BF765DA00F7DF78 /* SceneDelegate.swift in Sources */,
 				22022A7B2BF7B17D00F7DF78 /* KKAddCardVC.swift in Sources */,
 				22022A482BF76A7700F7DF78 /* KKHomeView.swift in Sources */,

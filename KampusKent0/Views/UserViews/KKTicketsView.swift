@@ -13,7 +13,7 @@ protocol KKTicetsViewDelegate: AnyObject {
 
 final class KKTicketsView: UIView {
     
-    let viewModel = KKTicketsViewVM()
+    let viewModel : KKTicketsViewVM = KKTicketsViewVM()
     var delegate: KKTicetsViewDelegate?
     
     let tableView: UITableView = {
@@ -33,6 +33,8 @@ final class KKTicketsView: UIView {
         viewModel.subscribeClosure { [weak self] bool in
             if bool {
                 self?.tableView.reloadData()
+            }else {
+                
             }
         }
         

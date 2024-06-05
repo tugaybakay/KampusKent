@@ -12,17 +12,17 @@ class KKTicketsTableViewCell: UITableViewCell {
     static let identifier = "KKTicketsTableViewCell"
     
     let startingStationLabel: KKTitleLabel = {
-        let label = KKTitleLabel(title: "Test dasljdlsja", fontSize: 21)
+        let label = KKTitleLabel(title: "", fontSize: 21)
         return label
     }()
     
     let destinationStationLabel: KKTitleLabel = {
-        let label = KKTitleLabel(title: "Test aslkdjlasjkd", fontSize: 21)
+        let label = KKTitleLabel(title: "", fontSize: 21)
         return label
     }()
     
     let dateLabel: KKBodyLabel = {
-        let label = KKBodyLabel(title: "Test lasjdlasjldkjsa", fontSize: 12)
+        let label = KKBodyLabel(title: "", fontSize: 12)
         return label
     }()
     
@@ -34,8 +34,6 @@ class KKTicketsTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    
-
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubViews(startingStationLabel,destinationStationLabel,dateLabel,qrcodeIconImageView)
@@ -87,9 +85,22 @@ class KKTicketsTableViewCell: UITableViewCell {
     }
     
     func configure(with cellViewModel: KKTicketsTableViewCellVM) {
-        self.startingStationLabel.text = cellViewModel.stratingStationName
-        self.destinationStationLabel.text = cellViewModel.destinationStationName
+        self.startingStationLabel.attributedText = prepareLabelAttributedText(iconName: "map-pin", text: cellViewModel.stratingStationName)
+        self.destinationStationLabel.attributedText = prepareLabelAttributedText(iconName: "bus", text: cellViewModel.destinationStationName)
         self.dateLabel.text = cellViewModel.dateString
     }
 
+    
+    private func prepareLabelAttributedText(iconName: String, text: String) -> NSMutableAttributedString{
+        let attachment = NSTextAttachment()
+        attachment.image = UIImage(named: iconName)?.withTintColor(.label)
+        let iconSize = CGRect(x: 0, y: -4, width: 23, height: 23)
+        attachment.bounds = iconSize
+        let attachmentString = NSAttributedString(attachment: attachment)
+        let textString = NSAttributedString(string: " \(text)")
+        let completeText = NSMutableAttributedString()
+        completeText.append(attachmentString)
+        completeText.append(textString)
+        return completeText
+    }
 }

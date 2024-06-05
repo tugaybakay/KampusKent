@@ -25,8 +25,7 @@ class KKLoginVC: UIViewController {
                 NSAttributedString.Key.foregroundColor: UIColor.white
             ]
         }
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "car.fill"), style: .done, target: self, action: #selector(driverButtonDidTap))
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "car.fill"), style: .done, target: self, action: #selector(driverButtonDidTap))
         
     }
     
@@ -40,13 +39,11 @@ class KKLoginVC: UIViewController {
             loginView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             loginView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
-        
     }
     
-    @objc private func driverButtonDidTap() {
-        
-    }
-
+//    @objc private func driverButtonDidTap() {
+//        
+//    }
 }
 
 extension KKLoginVC: KKLoginViewDelegate {
@@ -54,10 +51,16 @@ extension KKLoginVC: KKLoginViewDelegate {
         presentKKAlertOnMainThread(title: "Empty Email or Password", message: error.rawValue, buttonTitle: "Ok")
     }
     
-    func goToHomePage(userEmail: String) {
-        let destinatipnVC = KKTabBarVC()
-        destinatipnVC.modalPresentationStyle = .fullScreen
-        self.present(destinatipnVC, animated: true)
+    func goToHomePage(with user: KKUser) {
+        let destinationVC = KKTabBarVC()
+        destinationVC.modalPresentationStyle = .overFullScreen
+        self.present(destinationVC, animated: true)
+    }
+    
+    func goToDriverHomePage(with user: KKUser) {
+        let destinationVC = KKDriverTabBarVC(driver: user as? KKDriver)
+        destinationVC.modalPresentationStyle = .overFullScreen
+        self.present(destinationVC, animated: true)
     }
 }
 

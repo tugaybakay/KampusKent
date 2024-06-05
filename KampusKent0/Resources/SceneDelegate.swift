@@ -19,13 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not implzet windowScene = (scene as? UIWindowScene) else { return }
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-//        try! Auth.auth().signOut()
-        if Auth.auth().currentUser != nil {
-            self.window?.rootViewController = KKTabBarVC()
-        }else{
-            self.window?.rootViewController = UINavigationController(rootViewController: KKLoginVC())
-        }
-        
+        self.window?.rootViewController = UINavigationController(rootViewController: KKLoginVC())
         self.window?.makeKeyAndVisible()
     }
 

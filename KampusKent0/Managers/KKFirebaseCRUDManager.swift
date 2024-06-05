@@ -13,11 +13,11 @@ final class KKFirebaseCRUDManager {
     
     static let shared = KKFirebaseCRUDManager()
     private let firestore = Firestore.firestore()
-    private let userEmail = Auth.auth().currentUser?.email ?? ""
     
     private init() {}
     
     func fetchCardsFromFirebase(_ completion: @escaping (Result<[KKCard],Error>) -> Void) {
+        let userEmail: String = Auth.auth().currentUser?.email ?? ""
         firestore.collection("cards")
             .whereField("user", isEqualTo: userEmail)
             .addSnapshotListener { snapshot, error in
@@ -43,7 +43,56 @@ final class KKFirebaseCRUDManager {
             }
     }
     
+    func fetchStationsFromTickets(_ completion: @escaping (Result<[KKStation],Error>) -> Void) {
+        firestore.collection("tickets")
+            .addSnapshotListener { snap, error in
+                if let error = error {
+                    completion(.failure(error))
+                }else {
+                    var stations_id: Set<Int> = []
+                    let docs = snap!.documents
+                    for doc in docs {
+                        let data = doc.data()
+                        let startingStationID = data["startingStationID"] as! Int
+                        let destinationStationID = data["destinationStationID"] as! Int
+                        stations_id.insert(startingStationID)
+                        stations_id.insert(destinationStationID)
+                    }
+                    let id_array: [Int] = stations_id.sorted()
+                    self.fetchStationWithID(with: id_array) { stations in
+                        if let stations = stations {
+                            completion(.success(stations))
+                        }
+                    }
+                }
+            }
+    }
+    
+    private func fetchStationWithID(with id: [Int], _ completion: @escaping ([KKStation]?) -> Void) {
+        firestore
+            .collection("duraklar")
+            .whereField("id", in: id)
+            .getDocuments { snap, error in
+                if error != nil {
+                    completion(nil)
+                }else {
+                    let docs = snap!.documents
+                    var stations: [KKStation] = []
+                    for doc in docs {
+                        let data = doc.data()
+                        let location = data["location"] as! GeoPoint
+                        let name = data["name"] as! String
+                        let id = data["id"] as! Int
+                        let station = KKStation(id: id, name: name, location: location)
+                        stations.append(station)
+                    }
+                    completion(stations)
+                }
+            }
+    }
+    
     func fetchTicketsFromFirebase(_ completion: @escaping (Result<[KKTicket],Error>) -> Void) {
+        let userEmail: String = Auth.auth().currentUser?.email ?? ""
         firestore.collection("tickets")
             .whereField("user", isEqualTo: userEmail)
             .order(by: "date", descending: true)
@@ -84,16 +133,45 @@ final class KKFirebaseCRUDManager {
         
     }
     
-    func signInWithEmailAndPassword(email: String, password: String, completion: @escaping (KKError?) -> Void) {
+    func signInWithEmailAndPassword(email: String, password: String, completion: @escaping (Result<KKUser,KKError>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { _, error in
             if error != nil {
-                completion(.incorrectUsernameOrPassword)
+                completion(.failure(.incorrectUsernameOrPassword))
                 return
             }else {
-                completion(nil)
+                if email.contains("driver") {
+                    self.fetchUser(email: email, with: "drivers") { user in
+                        if let user = user {
+                            completion(.success(user))
+                        }
+                    }
+                }else{
+                    self.fetchUser(email: email, with: "users") { user in
+                        if let user = user {
+                            completion(.success(user))
+                        }
+                    }
+                }
             }
         }
         
+    }
+    
+    func fetchUser(email: String, with collection: String, completion: @escaping (KKUser?) -> Void)  {
+        firestore.collection(collection).getDocuments { snap, error in
+            if let snap = snap {
+                let docs = snap.documents
+                for doc in docs {
+                    let data = doc.data()
+                    let name = data["name"] as! String
+                    let surname = data["surname"] as! String
+                    let phoneNumber = data["phoneNumber"] as! String
+                    let validDate = data["validDate"] as! Timestamp
+                    let user = KKUser(email: email, name: name, surname: surname, phoneNumber: phoneNumber, validDate: validDate.dateValue())
+                    completion(user)
+                }
+            }
+        }
     }
     
     func fetchStations(completion: @escaping (Result<[KKStation],KKError>) -> Void) {
@@ -154,6 +232,47 @@ final class KKFirebaseCRUDManager {
                         }
                         
                     }
+                }
+            }
+    }
+    
+    func fetchVoyage(with id: String, _ completion: @escaping (KKVoyage?) -> Void) {
+        firestore
+            .collection("voyages")
+            .whereField("id", isEqualTo: id)
+            .getDocuments { snap, error in
+                if error != nil {
+                    completion(nil)
+                }else {
+                    let doc = snap!.documents.first!
+                    let data = doc.data()
+                    let busPlate = data["busPlate"] as! String
+                    let date = data["date"] as! Timestamp
+                    let driverEmail = data["driverEmail"] as! String
+                    self.fetchBus(with: busPlate) { bus in
+                        if let bus = bus {
+                            let voyage = KKVoyage(driverEmail: driverEmail, date: date, id: id, bus: bus)
+                            completion(voyage)
+                        }
+                    }
+                }
+            }
+    }
+    
+    private func fetchBus(with busPlate: String, _ completion: @escaping (KKBus?) -> Void ) {
+        firestore
+            .collection("buses")
+            .getDocuments { snap, error in
+                if error != nil {
+                    completion(nil)
+                }else {
+                    let doc = snap!.documents.first!
+                    let data = doc.data()
+                    let busBrand = data["busBrand"] as! String
+                    let model = data["model"] as! String
+                    let location = data["location"] as! GeoPoint
+                    let bus = KKBus(plateNumber: busPlate, busBrand: busBrand, model: model, location: location)
+                    completion(bus)
                 }
             }
     }

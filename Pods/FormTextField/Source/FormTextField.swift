@@ -100,7 +100,6 @@ open class FormTextField: UITextField, UITextFieldDelegate {
         button.setImage(image, for: UIControl.State())
         button.addTarget(self, action: #selector(FormTextField.clearButtonAction), for: .touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: FormTextField.AccessoryButtonWidth, height: FormTextField.AccessoryButtonHeight)
-
         return button
     }()
 

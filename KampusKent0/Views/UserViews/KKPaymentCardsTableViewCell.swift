@@ -32,7 +32,6 @@ class KKPaymentCardsTableViewCell: UITableViewCell {
         accessoryType = .disclosureIndicator
 //        translatesAutoresizingMaskIntoConstraints = false
         setUpConstraints()
-        // Initialization code
     }
     
     required init?(coder: NSCoder) {

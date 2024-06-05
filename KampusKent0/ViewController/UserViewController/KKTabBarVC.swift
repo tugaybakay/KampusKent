@@ -13,7 +13,6 @@ class KKTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTabBar()
-        
     }
     
     private func configureTabBar() {
@@ -22,7 +21,7 @@ class KKTabBarVC: UITabBarController {
         
         
         homeVC.tabBarItem =  UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
-        ticketVC.tabBarItem = UITabBarItem(title: "Tickets", image: UIImage(systemName: "doc"), tag: 2)
+        ticketVC.tabBarItem = UITabBarItem(title: "Tickets", image: UIImage(systemName: "ticket"), tag: 2)
         
         self.setViewControllers([homeVC,ticketVC], animated: true)
         tabBar.tintColor = .systemYellow

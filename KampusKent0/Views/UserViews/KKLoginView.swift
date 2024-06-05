@@ -10,7 +10,8 @@ import UIKit
 
 protocol KKLoginViewDelegate: AnyObject {
     func presentAlert(error: KKError)
-    func goToHomePage(userEmail: String)
+    func goToHomePage(with user: KKUser)
+    func goToDriverHomePage(with user: KKUser)
 }
 
 class KKLoginView: UIView {
@@ -30,17 +31,18 @@ class KKLoginView: UIView {
     
     let doneButton: KKButton = {
         let button = KKButton(backgroundColor: .systemYellow, text: "Login")
-        
         return button
     }()
     
     let emailTextField: KKTextField = {
         let textField = KKTextField(placeholder: "Enter your email")
+        textField.text = "test@driver.comu.edu.tr"
         return textField
     }()
     
     let passwordTextField: KKTextField = {
         let passwordTextField = KKTextField(placeholder: "Enter your password", textContentType: .password, returnKeyType: .done)
+        passwordTextField.text = "test123"
         return passwordTextField
     }()
     
@@ -99,11 +101,17 @@ class KKLoginView: UIView {
         }
         let password = passwordTextField.text!
         let email = emailTextField.text!
-        viewModel.loginToFirebase(email: email, password: password) { [weak self] error in
-            if let error = error {
-                self?.delegate?.presentAlert(error: error)
-            }else {
-                self?.delegate?.goToHomePage(userEmail: email)
+        viewModel.loginToFirebase(email: email, password: password) { [weak self] result in
+            switch result {
+            case .success(let user):
+                print(user.email)
+                if user.email.contains("driver") {
+                    self?.delegate?.goToDriverHomePage(with: user)
+                }else {
+                    self?.delegate?.goToHomePage(with: user)
+                }
+            case .failure(let failure):
+                self?.delegate?.presentAlert(error: failure)
             }
         }
     }
